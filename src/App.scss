@@ -18,9 +18,18 @@
   margin-top: 40px;
 }
 
-.form input {
-  height: 30px;
-  width: 192px;
+.formRow {
+  display: flex;
+  align-items: center;
+
+  & p {
+    margin-right: 16px;
+  }
+
+  & input {
+    height: 20px;
+    width: 145px;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
