@@ -15,6 +15,12 @@
   height: 50px;
   width: 200px;
   font-size: 22px;
+  margin-top: 40px;
+}
+
+.form input {
+  height: 30px;
+  width: 192px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
