@@ -1,7 +1,7 @@
-import './App.scss'
+import 'App.scss'
 import storeList from 'utils/dummy/store.json'
 import prefectureList from 'utils/dummy/prefectures.json'
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import axios, { AxiosResponse } from 'axios'
 
 interface Store {
@@ -42,12 +42,13 @@ function App(): JSX.Element {
   }
 
   useEffect(() => {
-    const getPrefectures = async () => {
-      const res: Prefectures[] = await axios.get('http://localhost:3001/prefectures').then((res: AxiosResponse) => {
-        return res.data
-      }).catch(() => {
-        return prefectureList
-      })
+    const getPrefectures = async (): Promise<void> => {
+      const res: Prefectures[] = await axios.get('http://localhost:3001/prefectures')
+        .then((res: AxiosResponse) => {
+          return res.data
+        }).catch(() => {
+          return prefectureList
+        })
 
       setPrefectures(res)
     }
