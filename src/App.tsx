@@ -1,7 +1,7 @@
 import './App.scss'
 import storeList from 'utils/dummy/store.json'
 import prefectureList from 'utils/dummy/prefectures.json'
-import { useState, useEffect } from "react"
+import React, { useState, useEffect } from 'react'
 import axios, { AxiosResponse } from 'axios'
 
 interface Store {
@@ -15,7 +15,7 @@ interface Prefectures {
   prefName: string
 }
 
-function App() {
+function App(): JSX.Element {
   const [data, setData] = useState<Store[]>([])
   const [prefectures, setPrefectures] = useState<Prefectures[]>([])
   const [storeName, setStoreName] = useState('')
@@ -42,7 +42,7 @@ function App() {
   }
 
   useEffect(() => {
-    const f = async () => {
+    const getPrefectures = async () => {
       const res: Prefectures[] = await axios.get('http://localhost:3001/prefectures').then((res: AxiosResponse) => {
         return res.data
       }).catch(() => {
@@ -52,7 +52,7 @@ function App() {
       setPrefectures(res)
     }
 
-    f()
+    getPrefectures()
   }, [prefectures])
 
   const onChangeValue = (el: React.ChangeEvent<HTMLInputElement>) => {
