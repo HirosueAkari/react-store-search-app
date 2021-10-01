@@ -1,11 +1,5 @@
 .App {
-  margin-top: 40px;
-  margin-left: 40px;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  margin: 20px 40px 0 40px;
 }
 
 .searchBtn {
@@ -20,7 +14,7 @@
 
 .form {
   &+& {
-    margin-top: 30px;
+    margin-top: 16px;
   }
 }
 
@@ -35,6 +29,30 @@
   & input {
     height: 20px;
     width: 145px;
+  }
+}
+
+ul {
+  margin-top: 32px;
+  padding-left: 0;
+  width: 50%;
+
+  & li {
+    display: flex;
+    list-style: none;
+    border-top: 1px #3e3a39 solid;
+
+    &:last-child {
+      border-bottom: 1px #3e3a39 solid;
+    }
+
+    & p:first-child {
+      width: 150px;
+    }
+  }
+
+  & p+p {
+    margin-left: 16px;
   }
 }
 

@@ -20,9 +20,11 @@ function App(): JSX.Element {
   const [prefectures, setPrefectures] = useState<Prefectures[]>([])
   const [storeName, setStoreName] = useState('')
   const [prefName, setPrefName] = useState('')
+  const [freeWord, setFreeWord] = useState('')
+  const [address, setAddress] = useState('')
 
   const search = async () => {
-    const res = await axios.get('http://localhost:3001/store').then((res: AxiosResponse) => {
+    const res: Store[] = await axios.get('http://localhost:3001/store').then((res: AxiosResponse) => {
       return res.data
     }).catch(() => {
       return storeList
@@ -36,6 +38,20 @@ function App(): JSX.Element {
 
     if (prefName) {
       const arr: Store[] = res.filter((store: Store) => store.address.includes(prefName))
+      setData(arr)
+      return
+    }
+
+    if (address) {
+      const arr: Store[] = res.filter((store: Store) => {
+        return store.address === address
+      })
+      setData(arr)
+      return
+    }
+
+    if (freeWord) {
+      const arr: Store[] = res.filter((store: Store) => store.address.includes(freeWord) || store.name.includes(freeWord))
       setData(arr)
       return
     }
@@ -56,8 +72,16 @@ function App(): JSX.Element {
     getPrefectures()
   }, [prefectures])
 
-  const onChangeValue = (el: React.ChangeEvent<HTMLInputElement>) => {
+  const onChangeStoreName = (el: React.ChangeEvent<HTMLInputElement>) => {
     setStoreName(el.target.value)
+  }
+
+  const onChangeFreeWord = (el: React.ChangeEvent<HTMLInputElement>) => {
+    setFreeWord(el.target.value)
+  }
+
+  const onChangeAddress = (el: React.ChangeEvent<HTMLInputElement>) => {
+    setAddress(el.target.value)
   }
 
   const onChangeSearchData = (el: React.ChangeEvent<HTMLSelectElement>) => {
@@ -71,7 +95,16 @@ function App(): JSX.Element {
           <p>店名</p>
           <input
             type="text"
-            onChange={(el: React.ChangeEvent<HTMLInputElement>) => onChangeValue(el)}
+            onChange={(el: React.ChangeEvent<HTMLInputElement>) => onChangeStoreName(el)}
+          />
+        </div>
+      </div>
+      <div className="form">
+        <div className="formRow">
+          <p>住所</p>
+          <input
+            type="text"
+            onChange={(el: React.ChangeEvent<HTMLInputElement>) => onChangeAddress(el)}
           />
         </div>
       </div>
@@ -86,8 +119,19 @@ function App(): JSX.Element {
           </select>
         </div>
       </div>
+      <div className="form">
+        <div className="formRow">
+          <p>フリーワード</p>
+          <input
+            type="text"
+            onChange={(el: React.ChangeEvent<HTMLInputElement>) => onChangeFreeWord(el)}
+          />
+        </div>
+      </div>
       <button className="searchBtn" onClick={search}>検索</button>
-      <ul>{data.map((store: Store, i) => <li key={i}>{store.name}</li>)}</ul>
+
+      <ul>{data.map((store: Store, i) => <li key={i}><p>{store.name}</p><p>{store.address}</p></li>)}</ul>
+
     </div>
   )
 }
