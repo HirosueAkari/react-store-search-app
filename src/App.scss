@@ -6,12 +6,12 @@
   margin: 20px 40px 0 40px;
 }
 
-a {
-  display: block;
+main {
+  padding-top: 64px;
+}
 
-  &+& {
-    margin-top: 32px;
-  }
+.title {
+  margin-left: 32px;
 }
 
 .searchBtn {
@@ -27,6 +27,10 @@ input,
 select {
   height: 30px;
   width: 145px;
+}
+
+.freeWord {
+  margin: 20px 40px 0 40px;
 }
 
 .formRow {

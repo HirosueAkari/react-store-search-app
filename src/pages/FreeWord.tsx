@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import axios, { AxiosResponse } from 'axios'
 import storeList from 'utils/dummy/store.json'
+import Button from '@material-ui/core/Button'
+import App from 'pages/App'
 
 interface Store {
   code: number
@@ -8,7 +10,7 @@ interface Store {
   address: string
 }
 
-function FreeWord(): JSX.Element {
+export default function FreeWord(): JSX.Element {
   const [data, setData] = useState<Store[]>([])
   const [freeWord, setFreeWord] = useState('')
 
@@ -31,17 +33,17 @@ function FreeWord(): JSX.Element {
   }
 
   return (
-    <div className="App">
-      <div className="formRow">
-        <input
-          type="text"
-          onChange={(el: React.ChangeEvent<HTMLInputElement>) => onChangeFreeWord(el)}
-        />
-        <button className="searchBtn" onClick={search}>検索</button>
+    <App>
+      <div className="freeWord">
+        <div className="formRow">
+          <input
+            type="text"
+            onChange={(el: React.ChangeEvent<HTMLInputElement>) => onChangeFreeWord(el)}
+          />
+          <Button className="searchBtn" onClick={search}>検索</Button>
+        </div>
+        <ul>{data.map((store: Store, i) => <li key={i}><p>{store.name}</p><p>{store.address}</p></li>)}</ul>
       </div>
-      <ul>{data.map((store: Store, i) => <li key={i}><p>{store.name}</p><p>{store.address}</p></li>)}</ul>
-    </div>
+    </App>
   )
 }
-
-export default FreeWord
