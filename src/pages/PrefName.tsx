@@ -3,6 +3,7 @@ import prefectureList from 'utils/dummy/prefectures.json'
 import storeList from 'utils/dummy/store.json'
 import { useState, useEffect } from 'react'
 import axios, { AxiosResponse } from 'axios'
+import App from 'pages/App'
 
 interface Prefectures {
   prefCode: number
@@ -54,8 +55,8 @@ function PrefName(): JSX.Element {
   }
 
   return (
-    <div className="App">
-      <div className="form">
+    <App>
+      <div className="prefName">
         <div className="formRow">
           <select
             onChange={(el: React.ChangeEvent<HTMLSelectElement>) => onChangePrefName(el)}
@@ -67,7 +68,7 @@ function PrefName(): JSX.Element {
         </div>
         <ul>{data.map((store: Store, i) => <li key={i}><p>{store.name}</p><p>{store.address}</p></li>)}</ul>
       </div>
-    </div>
+    </App>
   )
 }
 

@@ -11,9 +11,7 @@ import ListItemText from '@material-ui/core/ListItemText'
 import { Theme, makeStyles, createStyles } from "@material-ui/core/styles"
 import { Link } from 'react-router-dom'
 
-function App({ children }: {
-  children: React.ReactNode
-}): JSX.Element {
+function App({ children }: { children: React.ReactNode }): JSX.Element {
   const [open, setOpen] = useState(false);
 
   const toggleDrawer = () => {
@@ -65,7 +63,7 @@ function App({ children }: {
               <ListItemText primary={'店名 / 住所 / フリーワード'} />
             </ListItem>
           </Link>
-          <Link to="/free" className={styles().link}>
+          <Link to="/pref" className={styles().link}>
             <ListItem button>
               <ListItemText primary={'都道府県'} />
             </ListItem>
