@@ -23,19 +23,34 @@ export default function Conditions(): JSX.Element {
         <FormGroup>
           <FormControlLabel
             control={
-              <Checkbox checked={is24Hours} color="default" onChange={changeValue} name="is24Hours" />
+              <Checkbox
+                checked={is24Hours}
+                color="default"
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => changeValue(e)}
+                name="is24Hours"
+              />
             }
             label="24時間営業"
           />
           <FormControlLabel
             control={
-              <Checkbox checked={hasAtm} color="default" onChange={changeValue} name="hasAtm" />
+              <Checkbox
+                checked={hasAtm}
+                color="default"
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => changeValue(e)}
+                name="hasAtm"
+              />
             }
             label="ATMあり"
           />
           <FormControlLabel
             control={
-              <Checkbox checked={hasDrug} color="default" onChange={changeValue} name="hasDrug" />
+              <Checkbox
+                checked={hasDrug}
+                color="default"
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => changeValue(e)}
+                name="hasDrug"
+              />
             }
             label="ドラッグ"
           />
