@@ -68,6 +68,11 @@ function App({ children }: { children: React.ReactNode }): JSX.Element {
               <ListItemText primary={'都道府県'} />
             </ListItem>
           </Link>
+          <Link to="/conditions" className={styles().link}>
+            <ListItem button>
+              <ListItemText primary={'条件つき'} />
+            </ListItem>
+          </Link>
         </List>
       </Drawer>
       <main>{children}</main>
