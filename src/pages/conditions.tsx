@@ -1,14 +1,41 @@
 import App from 'pages/App'
 import { useState } from 'react'
-import { Checkbox, FormGroup, FormControlLabel } from '@material-ui/core'
+import axios, { AxiosResponse } from 'axios'
+import storeList from 'utils/dummy/store.json'
+import { Checkbox, FormGroup, FormControlLabel, Button } from '@material-ui/core'
+import { makeStyles, createStyles } from "@material-ui/core/styles"
+interface checkebox {
+  is24Hours: boolean,
+  hasAtm: boolean,
+  hasDrug: boolean
+}
+interface Store {
+  code: number
+  name: string
+  postal: string
+  address: string
+  tel: string
+  is24Hours: boolean,
+  hasAtm: boolean,
+  hasDrug: boolean
+}
 
 export default function Conditions(): JSX.Element {
-  const [state, setState] = useState({
+  const [state, setState] = useState<checkebox>({
     is24Hours: false,
     hasAtm: false,
     hasDrug: false
   })
   const { is24Hours, hasAtm, hasDrug } = state
+
+  const styles = makeStyles(() =>
+    createStyles({
+      searchBtn: {
+        backgroundColor: '#3f51b5',
+        color: '#FFF'
+      }
+    })
+  )
 
   const changeValue = (event: React.ChangeEvent<HTMLInputElement>) => {
     setState({
@@ -16,6 +43,40 @@ export default function Conditions(): JSX.Element {
       [event.target.name]: event.target.checked,
     });
   };
+
+  const search = async () => {
+    const checkedArr = (Object.keys(state) as (keyof checkebox)[]).filter((val) => {
+      return state[val]
+    })
+
+    const res: Store[] = await axios.get('http://localhost:3001/store').then((res: AxiosResponse) => {
+      return res.data
+    }).catch(() => {
+      return storeList
+    })
+
+    if (!checkedArr.length) return
+
+    let result: Store[] = []
+    let tmp: Store[] = []
+
+    checkedArr.forEach((value, i) => {
+      if (i === 0) {
+        tmp = res.filter((store: Store) => {
+          if (store[value]) return store
+          else return
+        })
+      } else {
+        tmp = tmp.filter((store: Store) => {
+          if (store[value]) return store
+          else return
+        })
+      }
+    })
+
+    result = tmp
+    console.log(result)
+  }
 
   return (
     <App>
@@ -55,6 +116,9 @@ export default function Conditions(): JSX.Element {
             label="ドラッグ"
           />
         </FormGroup>
+        <div className="btn-wrapper">
+          <Button className={styles().searchBtn} onClick={search}>検索</Button>
+        </div>
       </div>
     </App>
   )

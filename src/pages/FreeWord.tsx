@@ -7,7 +7,12 @@ import App from 'pages/App'
 interface Store {
   code: number
   name: string
+  postal: string
   address: string
+  tel: string
+  is24Hours: boolean,
+  hasAtm: boolean,
+  hasDrug: boolean
 }
 
 export default function FreeWord(): JSX.Element {

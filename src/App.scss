@@ -14,15 +14,6 @@ main {
   margin-left: 32px;
 }
 
-.searchBtn {
-  background-color: #0b1565;
-  color: #fff;
-  border-radius: 4px;
-  height: 30px;
-  width: 45px;
-  margin-left: 16px;
-}
-
 input,
 select {
   height: 30px;
@@ -62,6 +53,10 @@ ul {
   & p+p {
     margin-left: 16px;
   }
+}
+
+.btn-wrapper {
+  margin-top: 16px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -13,7 +13,12 @@ interface Prefectures {
 interface Store {
   code: number
   name: string
+  postal: string
   address: string
+  tel: string
+  is24Hours: boolean,
+  hasAtm: boolean,
+  hasDrug: boolean
 }
 
 function PrefName(): JSX.Element {

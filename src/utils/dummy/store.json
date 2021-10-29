@@ -5,9 +5,9 @@
     "postal": "800-0206",
     "address": "福岡県北九州市小倉南区葛原東4-6-10",
     "tel": "093-474-1800",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "2",
@@ -15,9 +15,9 @@
     "postal": "811-2108",
     "address": "福岡県糟屋郡宇美町ゆりが丘1-5-1",
     "tel": "092-934-2700",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "3",
@@ -25,9 +25,9 @@
     "postal": "863-0050",
     "address": "熊本県天草市丸尾町6-35",
     "tel": "0969-22-6111",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": false
   },
   {
     "code": "4",
@@ -35,9 +35,9 @@
     "postal": "807-0078",
     "address": "福岡県北九州市八幡西区中の原2-19-1",
     "tel": "093-614-5333",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "5",
@@ -45,9 +45,9 @@
     "postal": "828-0011",
     "address": "福岡県豊前市大字四郎丸1102-6",
     "tel": "0979-84-0339",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "6",
@@ -55,9 +55,9 @@
     "postal": "802-0831",
     "address": "福岡県北九州市小倉南区八重洲町5-15",
     "tel": "093-964-8060",
-    "is24hours": "false",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "7",
@@ -65,9 +65,9 @@
     "postal": "822-0001",
     "address": "福岡県直方市大字感田1967",
     "tel": "0949-26-8889",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "8",
@@ -75,9 +75,9 @@
     "postal": "877-0078",
     "address": "大分県日田市北友田3-2530-1",
     "tel": "0973-25-6355",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "9",
@@ -85,9 +85,9 @@
     "postal": "879-7111",
     "address": "大分県豊後大野市三重町赤嶺992",
     "tel": "0974-26-4233",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "10",
@@ -95,9 +95,9 @@
     "postal": "320-0865",
     "address": "栃木県宇都宮市睦町5-5",
     "tel": "028-614-3933",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "11",
@@ -105,9 +105,9 @@
     "postal": "863-0017",
     "address": "熊本県天草市船之尾町279-6",
     "tel": "0969-23-1234",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "12",
@@ -115,9 +115,9 @@
     "postal": "811-0101",
     "address": "福岡県糟屋郡新宮町大字原上1812-1",
     "tel": "092-940-6660",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "13",
@@ -125,9 +125,9 @@
     "postal": "400-0306",
     "address": "山梨県南アルプス市小笠原1423-1",
     "tel": "055-280-8880",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "14",
@@ -135,9 +135,9 @@
     "postal": "755-0036",
     "address": "山口県宇部市北琴芝2-2-45",
     "tel": "0836-29-6806",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "15",
@@ -145,9 +145,9 @@
     "postal": "833-0033",
     "address": "福岡県筑後市上北島字井原口1259",
     "tel": "0942-54-7001",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "16",
@@ -155,9 +155,9 @@
     "postal": "285-0926",
     "address": "千葉県印旛郡酒々井町本佐倉457-2",
     "tel": "043-481-8088",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "17",
@@ -165,9 +165,9 @@
     "postal": "808-0109",
     "address": "福岡県北九州市若松区南二島1-4-1",
     "tel": "093-772-0200",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "18",
@@ -175,9 +175,9 @@
     "postal": "697-1321",
     "address": "島根県浜田市周布町イ61－1",
     "tel": "0855-24-7980",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "19",
@@ -185,9 +185,9 @@
     "postal": "750-1162",
     "address": "山口県下関市清末五毛1-4-1",
     "tel": "083-281-2111",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "20",
@@ -195,9 +195,9 @@
     "postal": "803-0801",
     "address": "福岡県北九州市小倉北区西港町16-16",
     "tel": "093-562-5553",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "21",
@@ -205,9 +205,9 @@
     "postal": "820-0033",
     "address": "福岡県飯塚市徳前40-1",
     "tel": "0948-26-2229",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "22",
@@ -215,9 +215,9 @@
     "postal": "820-0013",
     "address": "福岡県飯塚市上三緒1-7",
     "tel": "0948-26-7676",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": false
   },
   {
     "code": "23",
@@ -225,9 +225,9 @@
     "postal": "263-0005",
     "address": "千葉県千葉市稲毛区長沼町71番地",
     "tel": "043-216-0160",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "24",
@@ -235,9 +235,9 @@
     "postal": "811-2304",
     "address": "福岡県糟屋郡粕屋町大字仲原2706",
     "tel": "092-626-9555",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "25",
@@ -245,9 +245,9 @@
     "postal": "319-1702",
     "address": "茨城県北茨城市大津町2568",
     "tel": "0293-30-4330",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "26",
@@ -255,9 +255,9 @@
     "postal": "802-0072",
     "address": "福岡県北九州市小倉北区東篠崎3丁目7番",
     "tel": "093-922-5554",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "27",
@@ -265,9 +265,9 @@
     "postal": "825-0002",
     "address": "福岡県田川市大字伊田4616",
     "tel": "0947-46-2237",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "28",
@@ -275,9 +275,9 @@
     "postal": "811-2205",
     "address": "福岡県糟屋郡志免町別府2丁目17番20号",
     "tel": "092-937-5678",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "29",
@@ -285,9 +285,9 @@
     "postal": "663-8137",
     "address": "兵庫県西宮市池開2-28",
     "tel": "0798-40-6787",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "30",
@@ -295,9 +295,9 @@
     "postal": "566-0042",
     "address": "大阪府摂津市東別府3-5-13",
     "tel": "06-4862-8778",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "31",
@@ -305,9 +305,9 @@
     "postal": "759-0212",
     "address": "山口県宇部市厚南中央二丁目１番２７号",
     "tel": "0836-44-1700",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "32",
@@ -315,9 +315,9 @@
     "postal": "800-0057",
     "address": "福岡県北九州市門司区大里新町11-6",
     "tel": "093-382-6688",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "33",
@@ -325,9 +325,9 @@
     "postal": "848-0032",
     "address": "佐賀県伊万里市二里町大里甲2455-1",
     "tel": "0955-20-0010",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "34",
@@ -335,9 +335,9 @@
     "postal": "751-0806",
     "address": "山口県下関市一の宮町1丁目2番27号",
     "tel": "083-263-3855",
-    "is24hours": "false",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": false,
+    "hasDrug": false
   },
   {
     "code": "35",
@@ -345,9 +345,9 @@
     "postal": "836-0034",
     "address": "福岡県大牟田市小浜町55番地1",
     "tel": "0944-41-5550",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "36",
@@ -355,9 +355,9 @@
     "postal": "703-8213",
     "address": "岡山県岡山市東区藤井254-1",
     "tel": "086-208-3777",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "37",
@@ -365,9 +365,9 @@
     "postal": "572-0039",
     "address": "大阪府寝屋川市池田3丁目7-18",
     "tel": "072-801-7176",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "38",
@@ -375,9 +375,9 @@
     "postal": "856-0814",
     "address": "長崎県大村市松並2丁目92番1",
     "tel": "0957-49-5553",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "39",
@@ -385,9 +385,9 @@
     "postal": "838-0031",
     "address": "福岡県朝倉市屋永字西原4272番1",
     "tel": "0946-21-8866",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "40",
@@ -395,9 +395,9 @@
     "postal": "849-0111",
     "address": "佐賀県三養基郡みやき町大字白壁5932",
     "tel": "0942-89-6633",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": false
   },
   {
     "code": "41",
@@ -405,9 +405,9 @@
     "postal": "276-0040",
     "address": "千葉県八千代市緑が丘西2丁目13番地3",
     "tel": "047-480-0039",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "42",
@@ -415,9 +415,9 @@
     "postal": "049-0111",
     "address": "北海道北斗市七重浜7丁目14-1",
     "tel": "0138-49-3000",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "43",
@@ -425,9 +425,9 @@
     "postal": "004-0064",
     "address": "北海道札幌市厚別区厚別西4条2丁目8-7",
     "tel": "011-891-4456",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "44",
@@ -435,9 +435,9 @@
     "postal": "006-0815",
     "address": "北海道札幌市手稲区前田5条13丁目3-1",
     "tel": "011-685-1212",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "45",
@@ -445,9 +445,9 @@
     "postal": "007-0873",
     "address": "北海道札幌市東区伏古13条3丁目21-1",
     "tel": "011-783-6161",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "46",
@@ -455,9 +455,9 @@
     "postal": "839-0841",
     "address": "福岡県久留米市御井旗崎4丁目1-1",
     "tel": "0942-40-8811",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "47",
@@ -465,9 +465,9 @@
     "postal": "866-0032",
     "address": "熊本県八代市新開町3-15",
     "tel": "0965-31-1118",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "48",
@@ -475,9 +475,9 @@
     "postal": "747-0833",
     "address": "山口県防府市大字浜方19番地1",
     "tel": "0835-26-3113",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "49",
@@ -485,9 +485,9 @@
     "postal": "870-1152",
     "address": "大分県大分市上宗方南2丁目1番7号",
     "tel": "097-588-8350",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "50",
@@ -495,9 +495,9 @@
     "postal": "874-0841",
     "address": "大分県別府市竹の内12組",
     "tel": "0977-27-1166",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "51",
@@ -505,9 +505,9 @@
     "postal": "834-0064",
     "address": "福岡県八女市蒲原字五反田848",
     "tel": "0943-30-1666",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "52",
@@ -515,9 +515,9 @@
     "postal": "849-0123",
     "address": "佐賀県三養基郡上峰町大字坊所字七本谷1581-2",
     "tel": "0952-55-6868",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "53",
@@ -525,9 +525,9 @@
     "postal": "069-0824",
     "address": "北海道江別市東野幌本町7番70",
     "tel": "011-381-8080",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "54",
@@ -535,9 +535,9 @@
     "postal": "871-0011",
     "address": "大分県中津市大字下池永字熊本153番地1",
     "tel": "0979-26-1188",
-    "is24hours": "false",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "55",
@@ -545,9 +545,9 @@
     "postal": "863-1902",
     "address": "熊本県天草市久玉町新久玉5711－36",
     "tel": "0969-73-3271",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "56",
@@ -555,9 +555,9 @@
     "postal": "409-3866",
     "address": "山梨県中巨摩郡昭和町西条1126番地",
     "tel": "055-268-7722",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "57",
@@ -565,9 +565,9 @@
     "postal": "070-8004",
     "address": "北海道旭川市神楽4条12丁目12-15",
     "tel": "0166-63-6611",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "58",
@@ -575,9 +575,9 @@
     "postal": "290-0067",
     "address": "千葉県市原市八幡海岸通1971－1",
     "tel": "0436-42-6655",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "59",
@@ -585,9 +585,9 @@
     "postal": "845-0033",
     "address": "佐賀県小城市三日月町樋口字五条1420番地",
     "tel": "0952-73-4444",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "60",
@@ -595,9 +595,9 @@
     "postal": "289-0305",
     "address": "千葉県香取市分郷218－1",
     "tel": "0478-80-1800",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "61",
@@ -605,9 +605,9 @@
     "postal": "807-0022",
     "address": "福岡県遠賀郡水巻町頃末北4丁目4－8",
     "tel": "093-203-5558",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "62",
@@ -615,9 +615,9 @@
     "postal": "811-4342",
     "address": "福岡県遠賀郡遠賀町大字尾崎字上ノ越1607番1",
     "tel": "093-291-2700",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "63",
@@ -625,9 +625,9 @@
     "postal": "325-0023",
     "address": "栃木県那須塩原市豊浦12番地１",
     "tel": "0287-73-0250",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "64",
@@ -635,9 +635,9 @@
     "postal": "251-0056",
     "address": "神奈川県藤沢市羽鳥5丁目13番地12号",
     "tel": "0466-31-2288",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "65",
@@ -645,9 +645,9 @@
     "postal": "631-0845",
     "address": "奈良県奈良市宝来3丁目11-9",
     "tel": "0742-53-7708",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "66",
@@ -655,9 +655,9 @@
     "postal": "869-0418",
     "address": "熊本県宇土市善道寺町綾織22－1",
     "tel": "0964-24-5188",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "67",
@@ -665,9 +665,9 @@
     "postal": "041-0807",
     "address": "北海道函館市北美原1丁目5番1号",
     "tel": "0138-34-6850",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "68",
@@ -675,9 +675,9 @@
     "postal": "379-2313",
     "address": "群馬県みどり市笠懸町鹿4367番地5",
     "tel": "0277-40-5510",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": false
   },
   {
     "code": "69",
@@ -685,9 +685,9 @@
     "postal": "689-2304",
     "address": "鳥取県東伯郡琴浦町大字逢束1273",
     "tel": "0858-52-6655",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "70",
@@ -695,9 +695,9 @@
     "postal": "811-3406",
     "address": "福岡県宗像市稲元２丁目３-１",
     "tel": "0940-39-2555",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "71",
@@ -705,9 +705,9 @@
     "postal": "079-8413",
     "address": "北海道旭川市永山三条4丁目1番3号",
     "tel": "0166-49-5015",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "72",
@@ -715,9 +715,9 @@
     "postal": "857-1165",
     "address": "長崎県佐世保市大和町65-2",
     "tel": "0956-46-7700",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "73",
@@ -725,9 +725,9 @@
     "postal": "347-0104",
     "address": "埼玉県加須市根古屋648-1",
     "tel": "0480-70-1155",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "74",
@@ -735,9 +735,9 @@
     "postal": "085-0803",
     "address": "北海道釧路市益浦1丁目10-7",
     "tel": "0154-92-3555",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "75",
@@ -745,9 +745,9 @@
     "postal": "088-0605",
     "address": "北海道釧路郡釧路町字別保原野南二十五線54番地1",
     "tel": "0154-40-6611",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "76",
@@ -755,9 +755,9 @@
     "postal": "824-0033",
     "address": "福岡県行橋市北泉4丁目36番13",
     "tel": "0930-26-0555",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "77",
@@ -765,9 +765,9 @@
     "postal": "409-3843",
     "address": "山梨県中央市西花輪字古宮4424-8",
     "tel": "055-278-5577",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "78",
@@ -775,9 +775,9 @@
     "postal": "690-0031",
     "address": "島根県松江市山代町1005番",
     "tel": "0852-60-1351",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "79",
@@ -785,9 +785,9 @@
     "postal": "069-0852",
     "address": "北海道江別市大麻東町13-11",
     "tel": "011-388-7007",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "80",
@@ -795,9 +795,9 @@
     "postal": "308-0847",
     "address": "茨城県筑西市玉戸1086-5",
     "tel": "0296-26-7001",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "81",
@@ -805,9 +805,9 @@
     "postal": "886-0003",
     "address": "宮崎県小林市堤字西ノ原2907番1",
     "tel": "0984-24-5505",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "82",
@@ -815,9 +815,9 @@
     "postal": "744-0074",
     "address": "山口県下松市潮音町1丁目16番20号",
     "tel": "0833-45-2221",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "83",
@@ -825,9 +825,9 @@
     "postal": "053-0806",
     "address": "北海道苫小牧市大成町1丁目1番2号",
     "tel": "0144-71-7227",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "84",
@@ -835,9 +835,9 @@
     "postal": "323-0014",
     "address": "栃木県小山市喜沢649番地2",
     "tel": "0285-20-5277",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "85",
@@ -845,9 +845,9 @@
     "postal": "889-1901",
     "address": "宮崎県北諸県郡三股町大字樺山4834番3",
     "tel": "0986-53-3830",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "86",
@@ -855,9 +855,9 @@
     "postal": "594-0053",
     "address": "大阪府和泉市芦部町86番1",
     "tel": "0725-40-6657",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "87",
@@ -865,9 +865,9 @@
     "postal": "826-0044",
     "address": "福岡県田川市位登1751番2",
     "tel": "0947-49-3311",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "88",
@@ -875,9 +875,9 @@
     "postal": "475-0023",
     "address": "愛知県半田市亀崎町９丁目１１７番",
     "tel": "0569-20-0070",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "89",
@@ -885,9 +885,9 @@
     "postal": "639-1044",
     "address": "奈良県大和郡山市小泉町東３丁目１０番２",
     "tel": "0743-59-3054",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "90",
@@ -895,9 +895,9 @@
     "postal": "805-0071",
     "address": "福岡県北九州市八幡東区東田1丁目5番9号",
     "tel": "093-663-8500",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": false
   },
   {
     "code": "91",
@@ -905,9 +905,9 @@
     "postal": "880-0916",
     "address": "宮崎県宮崎市大字恒久1527番1",
     "tel": "0985-63-3330",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "92",
@@ -915,9 +915,9 @@
     "postal": "023-0833",
     "address": "岩手県奥州市水沢上姉体3丁目2-1",
     "tel": "0197-26-5205",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "93",
@@ -925,9 +925,9 @@
     "postal": "020-0851",
     "address": "岩手県盛岡市向中野7丁目17番45号",
     "tel": "019-656-5701",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "94",
@@ -935,9 +935,9 @@
     "postal": "680-0911",
     "address": "鳥取県鳥取市千代水4丁目27番地",
     "tel": "0857-38-8877",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "95",
@@ -945,9 +945,9 @@
     "postal": "510-8027",
     "address": "三重県四日市市大字茂福771番1",
     "tel": "059-361-2223",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "96",
@@ -955,9 +955,9 @@
     "postal": "830-0052",
     "address": "福岡県久留米市上津町1654番1",
     "tel": "0942-51-2200",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "97",
@@ -965,9 +965,9 @@
     "postal": "358-0003",
     "address": "埼玉県入間市豊岡二丁目1番1号",
     "tel": "04-2901-2112",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "98",
@@ -975,9 +975,9 @@
     "postal": "520-2142",
     "address": "滋賀県大津市玉野浦10番1号",
     "tel": "077-548-3661",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "99",
@@ -985,9 +985,9 @@
     "postal": "746-0022",
     "address": "山口県周南市野村三丁目17番1号",
     "tel": "0834-61-0877",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "100",
@@ -995,9 +995,9 @@
     "postal": "515-0012",
     "address": "三重県松阪市東町59番地6",
     "tel": "0598-50-1166",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "101",
@@ -1005,9 +1005,9 @@
     "postal": "800-0061",
     "address": "福岡県北九州市門司区片上海岸6番21号",
     "tel": "093-322-5544",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "102",
@@ -1015,9 +1015,9 @@
     "postal": "820-1103",
     "address": "福岡県鞍手郡小竹町勝野1532番13",
     "tel": "09496-6-1122",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "103",
@@ -1025,9 +1025,9 @@
     "postal": "597-0062",
     "address": "大阪府貝塚市澤890番1",
     "tel": "072-433-6200",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "104",
@@ -1035,9 +1035,9 @@
     "postal": "309-1717",
     "address": "茨城県笠間市旭町430番1",
     "tel": "0296-71-2161",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "105",
@@ -1045,9 +1045,9 @@
     "postal": "800-0314",
     "address": "福岡県京都郡苅田町幸町5-1",
     "tel": "093-435-0880",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "106",
@@ -1055,9 +1055,9 @@
     "postal": "053-0053",
     "address": "北海道苫小牧市柳町1丁目6番9号",
     "tel": "0144-52-5577",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": false
   },
   {
     "code": "107",
@@ -1065,9 +1065,9 @@
     "postal": "066-0081",
     "address": "北海道千歳市清流2丁目4番5号",
     "tel": "0123-49-2060",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "108",
@@ -1075,9 +1075,9 @@
     "postal": "059-0033",
     "address": "北海道登別市栄町4丁目28番地1",
     "tel": "0143-82-2220",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "109",
@@ -1085,9 +1085,9 @@
     "postal": "598-0048",
     "address": "大阪府泉佐野市りんくう往来北１番地の１０",
     "tel": "072-458-3288",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "110",
@@ -1095,9 +1095,9 @@
     "postal": "870-0952",
     "address": "大分県大分市下郡北一丁目２番６０号",
     "tel": "097-554-8806",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "111",
@@ -1105,9 +1105,9 @@
     "postal": "683-0045",
     "address": "鳥取県米子市大谷町２８番地",
     "tel": "0859-36-0600",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "112",
@@ -1115,9 +1115,9 @@
     "postal": "006-0853",
     "address": "北海道札幌市手稲区星置３条1丁目１番１号",
     "tel": "011-686-8686",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "113",
@@ -1125,9 +1125,9 @@
     "postal": "068-0015",
     "address": "北海道岩見沢市東町６７８番地５",
     "tel": "0126-31-0060",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "114",
@@ -1135,9 +1135,9 @@
     "postal": "503-0117",
     "address": "岐阜県安八郡安八町大明神１８７番地１",
     "tel": "0584-63-0020",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "115",
@@ -1145,9 +1145,9 @@
     "postal": "090-0813",
     "address": "北海道北見市中ノ島町　２丁目２番１３号",
     "tel": "0157-66-2060",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "116",
@@ -1155,9 +1155,9 @@
     "postal": "305-0816",
     "address": "茨城県つくば市学園の森三丁目１２番地６",
     "tel": "029-860-5301",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "117",
@@ -1165,9 +1165,9 @@
     "postal": "085-0044",
     "address": "北海道釧路市川端町１番７号",
     "tel": "0154-21-5125",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "118",
@@ -1175,9 +1175,9 @@
     "postal": "671-0222",
     "address": "兵庫県姫路市別所町小林346番地",
     "tel": "079-251-1222",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "119",
@@ -1185,9 +1185,9 @@
     "postal": "739-0622",
     "address": "広島県大竹市晴海2丁目10番地48",
     "tel": "0827-59-1100",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "120",
@@ -1195,9 +1195,9 @@
     "postal": "031-0022",
     "address": "青森県八戸市大字糠塚字狐森１８番地１0",
     "tel": "0178-71-1620",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": false
   },
   {
     "code": "121",
@@ -1205,9 +1205,9 @@
     "postal": "854-0036",
     "address": "長崎県諫早市長野町1690番8",
     "tel": "0957-35-6600",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "122",
@@ -1215,9 +1215,9 @@
     "postal": "630-8144",
     "address": "奈良県奈良市東九条町１６７－１",
     "tel": "0742-50-5561",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "123",
@@ -1225,9 +1225,9 @@
     "postal": "699-0631",
     "address": "島根県出雲市斐川町直江5135-1",
     "tel": "0853-73-7725",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "124",
@@ -1235,9 +1235,9 @@
     "postal": "513-0816",
     "address": "三重県鈴鹿市南玉垣町５２００",
     "tel": "059-382-5105",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "125",
@@ -1245,9 +1245,9 @@
     "postal": "289-1115",
     "address": "千葉県八街市八街ほ743番地1",
     "tel": "043-440-0061",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "126",
@@ -1255,9 +1255,9 @@
     "postal": "514-0815",
     "address": "三重県津市藤方571番地１",
     "tel": "059-213-2051",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "127",
@@ -1265,9 +1265,9 @@
     "postal": "024-0004",
     "address": "岩手県北上市村崎野22地割135番地3",
     "tel": "0197-68-3522",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "128",
@@ -1275,9 +1275,9 @@
     "postal": "891-0115",
     "address": "鹿児島県鹿児島市東開町３番地１６",
     "tel": "099-268-6661",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "129",
@@ -1285,9 +1285,9 @@
     "postal": "855-0031",
     "address": "長崎県島原市前浜町丙　227番地",
     "tel": "0957-63-2151",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "130",
@@ -1295,9 +1295,9 @@
     "postal": "289-2535",
     "address": "千葉県旭市川口3435番地１",
     "tel": "0479-62-6106",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "131",
@@ -1305,9 +1305,9 @@
     "postal": "684-0076",
     "address": "鳥取県境港市 夕日ヶ丘2丁目 8番地",
     "tel": "0859-47-5550",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "132",
@@ -1315,9 +1315,9 @@
     "postal": "522-0002",
     "address": "滋賀県彦根市松原町1904番地3",
     "tel": "0749-27-5533",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "133",
@@ -1325,9 +1325,9 @@
     "postal": "847-0031",
     "address": "佐賀県唐津市原1421",
     "tel": "0955-77-6677",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "134",
@@ -1335,9 +1335,9 @@
     "postal": "755-0045",
     "address": "山口県宇部市中央町3丁目16-20",
     "tel": "0836-37-0051",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "135",
@@ -1345,9 +1345,9 @@
     "postal": "807-1311",
     "address": "福岡県鞍手郡鞍手町小牧2232-5",
     "tel": "0949-42-5000",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "136",
@@ -1355,9 +1355,9 @@
     "postal": "830-1224",
     "address": "福岡県三井郡大刀洗町鵜木1440番地33",
     "tel": "0942-77-5577",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "137",
@@ -1365,9 +1365,9 @@
     "postal": "981-1221",
     "address": "宮城県名取市田高字原174番地",
     "tel": "022-381-5266",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "138",
@@ -1375,9 +1375,9 @@
     "postal": "522-0223",
     "address": "滋賀県彦根市川瀬馬場町220番地",
     "tel": "0749-28-7706",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "139",
@@ -1385,9 +1385,9 @@
     "postal": "300-2707",
     "address": "茨城県常総市本石下4421番地1",
     "tel": "0297-30-8003",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "140",
@@ -1395,9 +1395,9 @@
     "postal": "811-1215",
     "address": "福岡県那珂川市松原5番23号",
     "tel": "092-951-3335",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "141",
@@ -1405,9 +1405,9 @@
     "postal": "693-0006",
     "address": "島根県出雲市白枝町420-1",
     "tel": "0853-24-7788",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "142",
@@ -1415,9 +1415,9 @@
     "postal": "510-0951",
     "address": "三重県四日市市小古曽東三丁目５番３３号",
     "tel": "059-348-5522",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "143",
@@ -1425,9 +1425,9 @@
     "postal": "755-0241",
     "address": "山口県宇部市大字東岐波6687-1",
     "tel": "0836-59-2022",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "144",
@@ -1435,9 +1435,9 @@
     "postal": "572-0819",
     "address": "大阪府寝屋川市大成町12-23",
     "tel": "072-823-3500",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "145",
@@ -1445,9 +1445,9 @@
     "postal": "881-0003",
     "address": "宮崎県西都市大字右松1913-1",
     "tel": "0983-41-0616",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "146",
@@ -1455,9 +1455,9 @@
     "postal": "899-5102",
     "address": "鹿児島県霧島市隼人町真孝480",
     "tel": "0995-44-6155",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "147",
@@ -1465,9 +1465,9 @@
     "postal": "869-1235",
     "address": "熊本県菊池郡大津町室1399",
     "tel": "096-349-3111",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "148",
@@ -1475,9 +1475,9 @@
     "postal": "849-1303",
     "address": "佐賀県鹿島市大字森字水町77番地1",
     "tel": "0954-69-5555",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "149",
@@ -1485,9 +1485,9 @@
     "postal": "515-0044",
     "address": "三重県松阪市久保町1897-1",
     "tel": "0598-60-2255",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "150",
@@ -1495,9 +1495,9 @@
     "postal": "599-0233",
     "address": "大阪府阪南市南山中193-1",
     "tel": "072-476-6187",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "151",
@@ -1505,9 +1505,9 @@
     "postal": "851-2108",
     "address": "長崎県西彼杵郡時津町日並郷3613",
     "tel": "095-813-2070",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "152",
@@ -1515,9 +1515,9 @@
     "postal": "680-0874",
     "address": "鳥取県鳥取市叶154-1",
     "tel": "0857-51-7277",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "153",
@@ -1525,9 +1525,9 @@
     "postal": "822-1212",
     "address": "福岡県田川郡福智町弁城4238-1",
     "tel": "0947-22-5731",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "154",
@@ -1535,9 +1535,9 @@
     "postal": "870-0820",
     "address": "大分県大分市西大道一丁目1番9号",
     "tel": "097-554-5500",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "155",
@@ -1545,9 +1545,9 @@
     "postal": "674-0074",
     "address": "兵庫県明石市魚住町清水2464-1",
     "tel": "078-944-5557",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "156",
@@ -1555,9 +1555,9 @@
     "postal": "061-1355",
     "address": "北海道恵庭市島松寿町１丁目４番地１",
     "tel": "0123-36-1011",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "157",
@@ -1565,9 +1565,9 @@
     "postal": "324-0062",
     "address": "栃木県大田原市中田原868-13",
     "tel": "0287-20-3113",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "158",
@@ -1575,9 +1575,9 @@
     "postal": "824-0064",
     "address": "福岡県行橋市上津熊111番地1",
     "tel": "0930-26-0480",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "159",
@@ -1585,9 +1585,9 @@
     "postal": "843-0024",
     "address": "佐賀県武雄市武雄町大字富岡12431番地1",
     "tel": "0954-20-0800",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "160",
@@ -1595,9 +1595,9 @@
     "postal": "813-0017",
     "address": "福岡県 福岡市東区 香椎照葉5丁目2-23",
     "tel": "092-661-8555",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "161",
@@ -1605,9 +1605,9 @@
     "postal": "698-0036",
     "address": "島根県益田市須子町32番7号",
     "tel": "0856-31-1052",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "162",
@@ -1615,9 +1615,9 @@
     "postal": "832-0005",
     "address": "福岡県柳川市西蒲池166-1",
     "tel": "0944-77-6800",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "163",
@@ -1625,9 +1625,9 @@
     "postal": "869-0622",
     "address": "熊本県宇城市小川町西北小川 字溝越４９７番地１",
     "tel": "0964-25-5777",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "164",
@@ -1635,9 +1635,9 @@
     "postal": "889-1403",
     "address": "宮崎県児湯郡新富町大字上富田字井ノ木田3234番1",
     "tel": "0983-33-1115",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "165",
@@ -1645,9 +1645,9 @@
     "postal": "520-3233",
     "address": "滋賀県湖南市柑子袋２５０番地５",
     "tel": "0748-72-7171",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "166",
@@ -1655,9 +1655,9 @@
     "postal": "893-0023",
     "address": "鹿児島県鹿屋市笠之原町１９５０番１",
     "tel": "050-3852-0828",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "167",
@@ -1665,9 +1665,9 @@
     "postal": "523-0083",
     "address": "滋賀県近江八幡市小船木町831番地１",
     "tel": "050-3852-0066",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "168",
@@ -1675,9 +1675,9 @@
     "postal": "742-0021",
     "address": "山口県柳井市柳井1574-1",
     "tel": "050-3852-5375",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "169",
@@ -1685,9 +1685,9 @@
     "postal": "369-0306",
     "address": "埼玉県児玉郡上里町大字七本木2121番地2",
     "tel": "050-3852-0794",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "170",
@@ -1695,9 +1695,9 @@
     "postal": "374-0112",
     "address": "群馬県邑楽郡板倉町朝日野3丁目12番地1",
     "tel": "0276-58-5193",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "171",
@@ -1705,9 +1705,9 @@
     "postal": "866-0824",
     "address": "熊本県八代市上日置町4522番地１",
     "tel": "0965-88-2614",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "172",
@@ -1715,9 +1715,9 @@
     "postal": "444-0124",
     "address": "愛知県額田郡幸田町大字深溝字小杉山104",
     "tel": "0564-56-8007",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "173",
@@ -1725,9 +1725,9 @@
     "postal": "899-0125",
     "address": "鹿児島県出水市黄金町562",
     "tel": "0996-65-8170",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "174",
@@ -1735,9 +1735,9 @@
     "postal": "047-0152",
     "address": "北海道小樽市新光5丁目1番1号",
     "tel": "0134-51-5056",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "175",
@@ -1745,9 +1745,9 @@
     "postal": "667-0024",
     "address": "兵庫県養父市八鹿町朝倉字上台１２６５－１",
     "tel": "079-662-0261",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "176",
@@ -1755,9 +1755,9 @@
     "postal": "501-6011",
     "address": "岐阜県羽島郡岐南町八剣北7丁目143",
     "tel": "058-259-6050",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "177",
@@ -1765,9 +1765,9 @@
     "postal": "879-0606",
     "address": "大分県豊後高田市玉津1628番地",
     "tel": "0978-23-1133",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "178",
@@ -1775,9 +1775,9 @@
     "postal": "002-0859",
     "address": "北海道札幌市北区屯田9条 12丁目1番1号",
     "tel": "011-775-5251",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "179",
@@ -1785,9 +1785,9 @@
     "postal": "847-0011",
     "address": "佐賀県唐津市栄町2579番地1",
     "tel": "0955-88-2127",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "180",
@@ -1795,9 +1795,9 @@
     "postal": "519-0505",
     "address": "三重県伊勢市小俣町本町３４１－２６１",
     "tel": "0596-20-5110",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "181",
@@ -1805,9 +1805,9 @@
     "postal": "699-1106",
     "address": "島根県雲南市加茂町加茂中２－１",
     "tel": "0854-49-9234",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "182",
@@ -1815,9 +1815,9 @@
     "postal": "842-0068",
     "address": "佐賀県神埼市千代田町下板86番1",
     "tel": "0952-34-6300",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "183",
@@ -1825,9 +1825,9 @@
     "postal": "870-1106",
     "address": "大分県大分市敷戸台一丁目１番８号",
     "tel": "097-504-7001",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "184",
@@ -1835,9 +1835,9 @@
     "postal": "329-0207",
     "address": "栃木県小山市美しが丘1丁目19番3",
     "tel": "0285-41-2500",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "185",
@@ -1845,9 +1845,9 @@
     "postal": "849-2101",
     "address": "佐賀県杵島郡大町町大町78番地1",
     "tel": "0952-71-4040",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "186",
@@ -1855,9 +1855,9 @@
     "postal": "861-0501",
     "address": "熊本県山鹿市山鹿821番地3",
     "tel": "0968-32-0660",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "187",
@@ -1865,9 +1865,9 @@
     "postal": "669-1324",
     "address": "兵庫県三田市ゆりのき台3丁目26番1",
     "tel": "079-553-5150",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "188",
@@ -1875,9 +1875,9 @@
     "postal": "563-0256",
     "address": "大阪府箕面市森町北1丁目2番55号",
     "tel": "072-733-3030",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "189",
@@ -1885,9 +1885,9 @@
     "postal": "887-0015",
     "address": "宮崎県日南市大字平野字深坪2559-1",
     "tel": "0987-32-1606",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "190",
@@ -1895,9 +1895,9 @@
     "postal": "062-0053",
     "address": "北海道札幌市豊平区月寒東三条11丁目1-21",
     "tel": "011-858-7071",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "191",
@@ -1905,9 +1905,9 @@
     "postal": "034-0023",
     "address": "青森県十和田市東十三番町39番4号",
     "tel": "0176-21-2135",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "192",
@@ -1915,9 +1915,9 @@
     "postal": "843-0301",
     "address": "佐賀県嬉野市嬉野町大字下宿甲182番地",
     "tel": "0954-20-4008",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "193",
@@ -1925,9 +1925,9 @@
     "postal": "634-0842",
     "address": "奈良県橿原市豊田町275番の１",
     "tel": "0744-20-0650",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "194",
@@ -1935,9 +1935,9 @@
     "postal": "889-1201",
     "address": "宮崎県児湯郡都農町大字川北字上助代5474番1",
     "tel": "0983-21-2411",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "195",
@@ -1945,9 +1945,9 @@
     "postal": "020-0632",
     "address": "岩手県滝沢市牧野林865-4",
     "tel": "019-699-2900",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "196",
@@ -1955,9 +1955,9 @@
     "postal": "633-0062",
     "address": "奈良県桜井市大字粟殿1017番9",
     "tel": "0744-49-2235",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "197",
@@ -1965,9 +1965,9 @@
     "postal": "639-2242",
     "address": "奈良県御所市大字本馬33番1",
     "tel": "0745-64-1066",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "198",
@@ -1975,9 +1975,9 @@
     "postal": "820-0606",
     "address": "福岡県嘉穂郡桂川町大字土居815-1",
     "tel": "0948-20-2121",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "199",
@@ -1985,9 +1985,9 @@
     "postal": "501-3963",
     "address": "岐阜県関市片倉町１番３",
     "tel": "0575-21-5878",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "200",
@@ -1995,9 +1995,9 @@
     "postal": "807-0048",
     "address": "福岡県遠賀郡水巻町吉田南５丁目５－１",
     "tel": "093-203-5030",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "201",
@@ -2005,9 +2005,9 @@
     "postal": "811-2221",
     "address": "福岡県糟屋郡須恵町旅石２２７番３",
     "tel": "092-937-5020",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "202",
@@ -2015,9 +2015,9 @@
     "postal": "752-0928",
     "address": "山口県下関市長府才川二丁目2-40",
     "tel": "083-249-2233",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": true
   },
   {
     "code": "203",
@@ -2025,9 +2025,9 @@
     "postal": "080-0805",
     "address": "北海道帯広市東五条南３丁目１２番地１",
     "tel": "0155-20-6660",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "204",
@@ -2035,9 +2035,9 @@
     "postal": "510-8102",
     "address": "三重県三重郡朝日町小向52-1",
     "tel": "059-376-0303",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "205",
@@ -2045,9 +2045,9 @@
     "postal": "883-0062",
     "address": "宮崎県日向市大字日知屋字加賀側3389-1",
     "tel": "0982-55-5101",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "206",
@@ -2055,9 +2055,9 @@
     "postal": "632-0083",
     "address": "奈良県天理市稲葉町87番地",
     "tel": "0743-68-3674",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "207",
@@ -2065,9 +2065,9 @@
     "postal": "584-0048",
     "address": "大阪府富田林市西板持町4丁目76",
     "tel": "0721-30-3195",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "208",
@@ -2075,9 +2075,9 @@
     "postal": "059-1275",
     "address": "北海道苫小牧市字錦岡５３番地１",
     "tel": "0144-61-5020",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "209",
@@ -2085,9 +2085,9 @@
     "postal": "883-0043",
     "address": "宮崎県日向市 都町10754-11",
     "tel": "0982-55-5015",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "210",
@@ -2095,9 +2095,9 @@
     "postal": "819-0167",
     "address": "福岡県福岡市 西区 今宿3丁目 4番36号",
     "tel": "092-805-3199",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "211",
@@ -2105,9 +2105,9 @@
     "postal": "025-0072",
     "address": "岩手県花巻市四日町 3丁目21-28",
     "tel": "0198-22-1182",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "212",
@@ -2115,9 +2115,9 @@
     "postal": "315-0052",
     "address": "茨城県かすみがうら市下稲吉字西山２６５４番地１",
     "tel": "0299-59-0533",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "213",
@@ -2125,9 +2125,9 @@
     "postal": "820-0013",
     "address": "福岡県飯塚市上三緒1-7(上三緒店リフェーズ跡)",
     "tel": "【携帯】080-7153-7913",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "214",
@@ -2135,9 +2135,9 @@
     "postal": "816-0872",
     "address": "福岡県春日市桜ケ丘四丁目49番",
     "tel": "092-915-0921",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "215",
@@ -2145,9 +2145,9 @@
     "postal": "500-8891",
     "address": "岐阜県岐阜市香蘭1丁目12番地",
     "tel": "058-255-2650",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "216",
@@ -2155,9 +2155,9 @@
     "postal": "825-0002",
     "address": "福岡県田川市大字伊田2412-9",
     "tel": "0947-50-7001",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "217",
@@ -2165,9 +2165,9 @@
     "postal": "811-1313",
     "address": "福岡県福岡市南区曰佐4丁目24-1",
     "tel": "092-588-6234",
-    "is24hours": "true",
-    "hasAtm": "false",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": false,
+    "hasDrug": false
   },
   {
     "code": "218",
@@ -2175,9 +2175,9 @@
     "postal": "039-2185",
     "address": "青森県上北郡おいらせ町上久保63番10",
     "tel": "0176-51-7337",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "219",
@@ -2185,9 +2185,9 @@
     "postal": "860-0079",
     "address": "熊本県 熊本市西区 上熊本三丁目 8番1",
     "tel": "096-326-3010",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false
   },
   {
     "code": "220",
@@ -2195,9 +2195,9 @@
     "postal": "455-0857",
     "address": "愛知県名古屋市港区秋葉2丁目74番地1",
     "tel": "052-304-8400",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "221",
@@ -2205,9 +2205,9 @@
     "postal": "816-0932",
     "address": "福岡県大野城市瓦田5丁目11-30",
     "tel": "092-404-0717",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "222",
@@ -2215,9 +2215,9 @@
     "postal": "823-0011",
     "address": "福岡県宮若市宮田109番1",
     "tel": "0949-52-6736",
-    "is24hours": "true",
-    "hasAtm": "true",
-    "hasDrug": "true"
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true
   },
   {
     "code": "223",
@@ -2225,8 +2225,8 @@
     "postal": "818-0059",
     "address": "福岡県筑紫野市塔原東５丁目11-5",
     "tel": "092-403-0230",
-    "is24hours": "false",
-    "hasAtm": "true",
-    "hasDrug": "false"
+    "is24Hours": false,
+    "hasAtm": true,
+    "hasDrug": false
   }
 ]
