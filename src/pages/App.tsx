@@ -73,6 +73,11 @@ function App({ children }: { children: React.ReactNode }): JSX.Element {
               <ListItemText primary={'条件つき'} />
             </ListItem>
           </Link>
+          <Link to="/location" className={styles().link}>
+            <ListItem button>
+              <ListItemText primary={'現在地から'} />
+            </ListItem>
+          </Link>
         </List>
       </Drawer>
       <main>{children}</main>
