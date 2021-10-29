@@ -23,6 +23,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "baseUrl": "src",
+    "types": ["@types/react-geocode"]
   },
   "include": [
     "src"
