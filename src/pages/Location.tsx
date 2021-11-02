@@ -37,8 +37,9 @@ export default function Conditions(): JSX.Element {
     setLongitude(location.coords.longitude)
     const lat: number = location.coords.latitude
     const lon: number = location.coords.longitude
+    const key: string | undefined = process.env.REACT_APP_GOOGLE_MAP_API_KEY
 
-    Geocode.setApiKey('AIzaSyA-7S1CFzW0z10dZ72KrpvbX2qdZxktgY4')
+    Geocode.setApiKey(String(key))
     Geocode.setLanguage('ja')
     Geocode.setRegion('ja')
 
