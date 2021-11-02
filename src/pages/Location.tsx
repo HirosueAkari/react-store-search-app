@@ -43,7 +43,7 @@ export default function Conditions(): JSX.Element {
     Geocode.setRegion('ja')
 
     Geocode.fromLatLng(String(lat), String(lon)).then((res) => {
-      setLocalLocation(res.result[0].formatted_address)
+      setLocalLocation(res.results[0].formatted_address)
     })
   }
 

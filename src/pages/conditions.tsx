@@ -26,6 +26,7 @@ export default function Conditions(): JSX.Element {
     hasAtm: false,
     hasDrug: false
   })
+  const [data, setData] = useState<Store[]>([])
   const { is24Hours, hasAtm, hasDrug } = state
 
   const styles = makeStyles(() =>
@@ -75,6 +76,7 @@ export default function Conditions(): JSX.Element {
     })
 
     result = tmp
+    setData(result)
     console.log(result)
   }
 
@@ -119,6 +121,12 @@ export default function Conditions(): JSX.Element {
         <div className="btn-wrapper">
           <Button className={styles().searchBtn} onClick={search}>検索</Button>
         </div>
+        <ul>{data.map((store: Store, i) =>
+          <li key={i}>
+            <p>{store.name}</p><p>{store.address}</p>{store.is24Hours && <p className="24hours">24時間</p>}
+            {store.hasAtm && <p className="atm">ATM</p>}{store.hasDrug && <p className="drug">ドラッグ</p>}
+          </li>)}
+        </ul>
       </div>
     </App>
   )

@@ -20,6 +20,10 @@ select {
   width: 145px;
 }
 
+// .24hours {
+//   color: red;
+// }
+
 .freeWord,
 .prefName,
 .conditions,
@@ -35,7 +39,7 @@ select {
 ul {
   margin-top: 32px;
   padding-left: 0;
-  width: 50%;
+  width: 70%;
 
   & li {
     display: flex;
