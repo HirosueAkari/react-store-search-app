@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button'
 import App from 'pages/App'
 
 interface Store {
-  code: number
+  code: string
   name: string
   postal: string
   address: string

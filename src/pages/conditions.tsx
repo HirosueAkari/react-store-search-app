@@ -5,18 +5,18 @@ import storeList from 'utils/dummy/store.json'
 import { Checkbox, FormGroup, FormControlLabel, Button } from '@material-ui/core'
 import { makeStyles, createStyles } from "@material-ui/core/styles"
 interface checkebox {
-  is24Hours: boolean,
-  hasAtm: boolean,
+  is24Hours: boolean
+  hasAtm: boolean
   hasDrug: boolean
 }
 interface Store {
-  code: number
+  code: string
   name: string
   postal: string
   address: string
   tel: string
-  is24Hours: boolean,
-  hasAtm: boolean,
+  is24Hours: boolean
+  hasAtm: boolean
   hasDrug: boolean
 }
 

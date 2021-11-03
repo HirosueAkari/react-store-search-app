@@ -11,7 +11,7 @@ interface Prefectures {
 }
 
 interface Store {
-  code: number
+  code: string
   name: string
   postal: string
   address: string
