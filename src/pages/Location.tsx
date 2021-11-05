@@ -2,8 +2,7 @@ import App from 'pages/App'
 import { useState } from 'react'
 import { Button } from '@material-ui/core'
 import Geocode from "react-geocode"
-// import storeList from 'utils/dummy/store.json'
-import geoStoreList from 'utils/dummy/geoStore.json'
+import storeList from 'utils/dummy/store.json'
 import { makeStyles, createStyles } from "@material-ui/core/styles"
 
 interface Store {
@@ -15,13 +14,13 @@ interface Store {
   is24Hours: boolean
   hasAtm: boolean
   hasDrug: boolean
+  latitude: number
+  longitude: number
   // [key: string]: string | number
   // 上記にすると、boolean型の値に影響がでるのはなぜ
 }
 
 interface geoStore extends Store {
-  latitude: number
-  longitude: number
   distance?: number //任意でないとエラーになるのはなぜ
 }
 
@@ -69,7 +68,7 @@ export default function Conditions(): JSX.Element {
       setLocalLocation(res.results[0].formatted_address)
       // addStoreGeoCode()
     }).then(() => {
-      geoStoreList.forEach((data: geoStore) => {
+      storeList.forEach((data: geoStore) => {
         if (data.latitude && data.longitude) {
           const distance = getDistance(lat, lon, data.latitude, data.longitude)
           data.distance = distance
@@ -78,12 +77,12 @@ export default function Conditions(): JSX.Element {
         }
       })
     }).then(() => {
-      geoStoreList.sort((a: geoStore, b: geoStore) => {
+      storeList.sort((a: geoStore, b: geoStore) => {
         if (a.distance && b.distance) {
           return (a.distance < b.distance) ? -1 : 1
         } else return 0
       })
-      setData(geoStoreList)
+      setData(storeList)
     })
   }
 
@@ -122,7 +121,7 @@ export default function Conditions(): JSX.Element {
           Math.sin(fromLat) * Math.sin(toLat))
     }
 
-    return distance
+    return Math.floor(distance * 10) / 10
   }
 
   return (
@@ -136,9 +135,14 @@ export default function Conditions(): JSX.Element {
           <p>経度：{longitude}</p>
           <p>現在地：{localLocation}</p>
         </div>
-        <ul>{data.map((store: geoStore, i) =>
+        {/* <ul>{data.map((store: geoStore, i) =>
           <li key={i}>
-            <p>{store.name}</p><p>{store.address}</p>
+            <p>{store.name}</p><p>{store.address}</p><p>{store.distance}km</p>
+          </li>)}
+        </ul> */}
+        <ul>{data.filter((store: geoStore,) => store.distance && store.distance < 10).map((store: geoStore, i) =>
+          <li key={i}>
+            <p>{store.name}</p><p>{store.address}</p><p>{store.distance}km</p>
           </li>)}
         </ul>
       </div>
