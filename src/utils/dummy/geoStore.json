@@ -1,5 +1,29 @@
 [
   {
+    "code": "2",
+    "name": "宇美店",
+    "postal": "811-2108",
+    "address": "福岡県糟屋郡宇美町ゆりが丘1-5-1",
+    "tel": "092-934-2700",
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false,
+    "latitude": 33.5551667,
+    "longitude": 130.5289785
+  },
+  {
+    "code": "12",
+    "name": "新宮店",
+    "postal": "811-0101",
+    "address": "福岡県糟屋郡新宮町大字原上1812-1",
+    "tel": "092-940-6660",
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": false,
+    "latitude": 33.6956411,
+    "longitude": 130.4471487
+  },
+  {
     "code": "24",
     "name": "粕屋店",
     "postal": "811-2304",
@@ -22,6 +46,30 @@
     "hasDrug": true,
     "latitude": 33.601877,
     "longitude": 130.4525476
+  },
+  {
+    "code": "70",
+    "name": "宗像店",
+    "postal": "811-3406",
+    "address": "福岡県宗像市稲元２丁目３-１",
+    "tel": "0940-39-2555",
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true,
+    "latitude": 33.8086478,
+    "longitude": 130.5461755
+  },
+  {
+    "code": "140",
+    "name": "那珂川店",
+    "postal": "811-1215",
+    "address": "福岡県那珂川市松原5番23号",
+    "tel": "092-951-3335",
+    "is24Hours": true,
+    "hasAtm": true,
+    "hasDrug": true,
+    "latitude": 33.5077006,
+    "longitude": 130.4366009
   },
   {
     "code": "160",
@@ -48,54 +96,6 @@
     "longitude": 130.4924585
   },
   {
-    "code": "12",
-    "name": "新宮店",
-    "postal": "811-0101",
-    "address": "福岡県糟屋郡新宮町大字原上1812-1",
-    "tel": "092-940-6660",
-    "is24Hours": true,
-    "hasAtm": true,
-    "hasDrug": false,
-    "latitude": 33.6956411,
-    "longitude": 130.4471487
-  },
-  {
-    "code": "214",
-    "name": "春日桜ケ丘店",
-    "postal": "816-0872",
-    "address": "福岡県春日市桜ケ丘四丁目49番",
-    "tel": "092-915-0921",
-    "is24Hours": true,
-    "hasAtm": true,
-    "hasDrug": true,
-    "latitude": 33.5428707,
-    "longitude": 130.4471802
-  },
-  {
-    "code": "2",
-    "name": "宇美店",
-    "postal": "811-2108",
-    "address": "福岡県糟屋郡宇美町ゆりが丘1-5-1",
-    "tel": "092-934-2700",
-    "is24Hours": true,
-    "hasAtm": true,
-    "hasDrug": false,
-    "latitude": 33.5551667,
-    "longitude": 130.5289785
-  },
-  {
-    "code": "140",
-    "name": "那珂川店",
-    "postal": "811-1215",
-    "address": "福岡県那珂川市松原5番23号",
-    "tel": "092-951-3335",
-    "is24Hours": true,
-    "hasAtm": true,
-    "hasDrug": true,
-    "latitude": 33.5077006,
-    "longitude": 130.4366009
-  },
-  {
     "code": "210",
     "name": "今宿店",
     "postal": "819-0167",
@@ -108,15 +108,15 @@
     "longitude": 130.2652523
   },
   {
-    "code": "70",
-    "name": "宗像店",
-    "postal": "811-3406",
-    "address": "福岡県宗像市稲元２丁目３-１",
-    "tel": "0940-39-2555",
+    "code": "214",
+    "name": "春日桜ケ丘店",
+    "postal": "816-0872",
+    "address": "福岡県春日市桜ケ丘四丁目49番",
+    "tel": "092-915-0921",
     "is24Hours": true,
     "hasAtm": true,
     "hasDrug": true,
-    "latitude": 33.8086478,
-    "longitude": 130.5461755
+    "latitude": 33.5428707,
+    "longitude": 130.4471802
   }
 ]
