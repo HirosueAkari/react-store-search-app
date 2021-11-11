@@ -28,16 +28,22 @@ export default function FreeWord(): JSX.Element {
   }
 
   const search = async () => {
-    const res: Store[] = await axios.get('http://localhost:3001/store').then((res: AxiosResponse) => {
-      return res.data
-    }).catch(() => {
-      return storeList
-    })
+    try {
+      const res: Store[] = await axios.get('http://localhost:3001/store').then((res: AxiosResponse) => {
+        return res.data
+      }).catch(() => {
+        return storeList
+      })
 
-    if (freeWord) {
-      const arr: Store[] = res.filter((store: Store) => store.address.includes(freeWord) || store.name.includes(freeWord))
-      setData(arr)
-      return
+      if (freeWord) {
+        const arr: Store[] = res.filter((store: Store) => store.address.includes(freeWord) || store.name.includes(freeWord))
+        setData(arr)
+        return
+      } else {
+        throw new Error('検索内容が入力されていません。')
+      }
+    } catch (e) {
+      console.error(e)
     }
   }
 
@@ -64,7 +70,6 @@ export default function FreeWord(): JSX.Element {
           <Button className="searchBtn" onClick={search}>検索</Button>
         </div>
         <SearchResult stores={data} />
-        {/* <ul>{data.map((store: Store, i) => <li key={i}><p>{store.name}</p><p>{store.address}</p></li>)}</ul> */}
       </div>
     </App>
   )

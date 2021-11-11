@@ -50,13 +50,20 @@ export default function Conditions(): JSX.Element {
       maximumAge: 10000
     }
 
-    if (!navigator.geolocation) alert("あなたの端末では、現在位置を取得できません。")
+    try {
+      if (!navigator.geolocation) {
+        alert('あなたの端末では、現在位置を取得できません。')
+        throw new Error('現在地取得できない端末です')
+      }
 
-    navigator.geolocation.getCurrentPosition(
-      (position: GeolocationPosition) => success(position),
-      (error: GeolocationPositionError) => fail(error),
-      option
-    )
+      navigator.geolocation.getCurrentPosition(
+        (position: GeolocationPosition) => success(position),
+        (error: GeolocationPositionError) => fail(error),
+        option
+      )
+    } catch (e) {
+      console.error(e)
+    }
   }
 
   const success = (location: GeolocationPosition) => {

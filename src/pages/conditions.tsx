@@ -59,7 +59,13 @@ export default function Conditions(): JSX.Element {
       return storeList
     })
 
-    if (!checkedArr.length) return
+    try {
+      if (!checkedArr.length) {
+        throw new Error('条件が選択されていません')
+      }
+    } catch (e) {
+      console.error(e)
+    }
 
     let result: Store[] = []
     let tmp: Store[] = []
@@ -138,12 +144,6 @@ export default function Conditions(): JSX.Element {
         <div className="btn-wrapper">
           <Button className={styles().searchBtn} onClick={search}>検索</Button>
         </div>
-        {/* <ul>{data.map((store: Store, i) =>
-          <li key={i}>
-            <p>{store.name}</p><p>{store.address}</p>{store.is24Hours && <p className="24hours">24時間</p>}
-            {store.hasAtm && <p className="atm">ATM</p>}{store.hasDrug && <p className="drug">ドラッグ</p>}
-          </li>)}
-        </ul> */}
         <SearchResult stores={data} />
       </div>
     </App>

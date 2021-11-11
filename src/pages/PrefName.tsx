@@ -45,7 +45,7 @@ function PrefName(): JSX.Element {
           throw new Error('都道府県が取得できませんでした')
         }
       } catch (e) {
-        console.log(e)
+        console.error(e)
       } finally {
         setPrefectures(prefectureList)
       }
@@ -74,7 +74,7 @@ function PrefName(): JSX.Element {
         throw new Error('都道府県が選択されていません')
       }
     } catch (e) {
-      console.log(e)
+      console.error(e)
     }
   }
 
@@ -103,7 +103,6 @@ function PrefName(): JSX.Element {
           <button className="searchBtn" onClick={search}>検索</button>
         </div>
         <SearchResult stores={data} />
-        {/* <ul>{data.map((store: Store, i) => <li key={i}><p>{store.name}</p><p>{store.address}</p></li>)}</ul> */}
       </div>
     </App>
   )
