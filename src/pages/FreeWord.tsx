@@ -15,6 +15,10 @@ interface Store {
   hasDrug: boolean
 }
 
+interface searchResultProps {
+  stores: Store[]
+}
+
 export default function FreeWord(): JSX.Element {
   const [data, setData] = useState<Store[]>([])
   const [freeWord, setFreeWord] = useState('')
@@ -37,6 +41,18 @@ export default function FreeWord(): JSX.Element {
     }
   }
 
+  const SearchResult: React.FC<searchResultProps> = (props) => {
+    if (props.stores.length) {
+      return (
+        <ul>{props.stores.map((store: Store, i) =>
+          <li key={i}><p>{store.name}</p><p>{store.address}</p></li>)}
+        </ul>
+      )
+    } else {
+      return (<p>お探しの店舗が見つかりませんでした。</p>)
+    }
+  }
+
   return (
     <App>
       <div className="freeWord">
@@ -47,7 +63,8 @@ export default function FreeWord(): JSX.Element {
           />
           <Button className="searchBtn" onClick={search}>検索</Button>
         </div>
-        <ul>{data.map((store: Store, i) => <li key={i}><p>{store.name}</p><p>{store.address}</p></li>)}</ul>
+        <SearchResult stores={data} />
+        {/* <ul>{data.map((store: Store, i) => <li key={i}><p>{store.name}</p><p>{store.address}</p></li>)}</ul> */}
       </div>
     </App>
   )

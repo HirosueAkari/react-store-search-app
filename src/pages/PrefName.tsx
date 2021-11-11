@@ -20,6 +20,9 @@ interface Store {
   hasAtm: boolean,
   hasDrug: boolean
 }
+interface searchResultProps {
+  stores: Store[]
+}
 
 function PrefName(): JSX.Element {
   const [data, setData] = useState<Store[]>([])
@@ -28,14 +31,24 @@ function PrefName(): JSX.Element {
 
   useEffect(() => {
     const getPrefectures = async (): Promise<void> => {
-      const res: Prefectures[] = await axios.get('http://localhost:3001/prefectures')
-        .then((res: AxiosResponse) => {
-          return res.data
-        }).catch(() => {
-          return prefectureList
-        })
+      try {
+        const res: Prefectures[] = await axios.get('http://localhost:3001/prefectures')
+          .then((res: AxiosResponse) => {
+            return res.data
+          }).catch(() => {
+            return prefectureList
+          })
 
-      setPrefectures(res)
+        if (res) {
+          setPrefectures(res)
+        } else {
+          throw new Error('都道府県が取得できませんでした')
+        }
+      } catch (e) {
+        console.log(e)
+      } finally {
+        setPrefectures(prefectureList)
+      }
     }
 
     getPrefectures()
@@ -46,16 +59,34 @@ function PrefName(): JSX.Element {
   }
 
   const search = async () => {
-    const res: Store[] = await axios.get('http://localhost:3001/store').then((res: AxiosResponse) => {
-      return res.data
-    }).catch(() => {
-      return storeList
-    })
+    try {
+      const res: Store[] = await axios.get('http://localhost:3001/store').then((res: AxiosResponse) => {
+        return res.data
+      }).catch(() => {
+        return storeList
+      })
 
-    if (prefName) {
-      const arr: Store[] = res.filter((store: Store) => store.address.includes(prefName))
-      setData(arr)
-      return
+      if (prefName) {
+        const arr: Store[] = res.filter((store: Store) => store.address.includes(prefName))
+        setData(arr)
+        return
+      } else {
+        throw new Error('都道府県が選択されていません')
+      }
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
+  const SearchResult: React.FC<searchResultProps> = (props) => {
+    if (props.stores.length) {
+      return (
+        <ul>{props.stores.map((store: Store, i) =>
+          <li key={i}><p>{store.name}</p><p>{store.address}</p></li>)}
+        </ul>
+      )
+    } else {
+      return (<p>お探しの店舗が見つかりませんでした。</p>)
     }
   }
 
@@ -71,7 +102,8 @@ function PrefName(): JSX.Element {
           </select>
           <button className="searchBtn" onClick={search}>検索</button>
         </div>
-        <ul>{data.map((store: Store, i) => <li key={i}><p>{store.name}</p><p>{store.address}</p></li>)}</ul>
+        <SearchResult stores={data} />
+        {/* <ul>{data.map((store: Store, i) => <li key={i}><p>{store.name}</p><p>{store.address}</p></li>)}</ul> */}
       </div>
     </App>
   )

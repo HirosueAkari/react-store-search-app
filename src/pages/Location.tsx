@@ -142,7 +142,7 @@ export default function Conditions(): JSX.Element {
   }
 
   const SearchResult: React.FC<searchResultProps> = (props) => {
-    if (props.stores.length > 0) {
+    if (props.stores.length) {
       return (
         <ul>{props.stores.map((store: distanceStore, i) =>
           <li key={i}>
@@ -166,11 +166,6 @@ export default function Conditions(): JSX.Element {
           <p>経度：{longitude}</p>
           <p>現在地：{localLocation}</p>
         </div>
-        {/* <ul>{data.filter((store: distanceStore) => store.distance && store.distance < 0).map((store: distanceStore, i) =>
-          <li key={i}>
-            <p>{store.name}</p><p>{store.address}</p><p>{store.distance}km</p>
-          </li>)}
-        </ul> */}
         <SearchResult stores={data.filter((store: distanceStore) => store.distance && store.distance < 10)} />
       </div>
     </App>

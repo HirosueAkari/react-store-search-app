@@ -19,6 +19,9 @@ interface Store {
   hasAtm: boolean
   hasDrug: boolean
 }
+interface searchResultProps {
+  stores: Store[]
+}
 
 export default function Conditions(): JSX.Element {
   const [state, setState] = useState<checkebox>({
@@ -77,7 +80,21 @@ export default function Conditions(): JSX.Element {
 
     result = tmp
     setData(result)
-    console.log(result)
+  }
+
+  const SearchResult: React.FC<searchResultProps> = (props) => {
+    if (props.stores.length) {
+      return (
+        <ul>{props.stores.map((store: Store, i) =>
+          <li key={i}>
+            <p>{store.name}</p><p>{store.address}</p>{store.is24Hours && <p className="24hours">24時間</p>}
+            {store.hasAtm && <p className="atm">ATM</p>}{store.hasDrug && <p className="drug">ドラッグ</p>}
+          </li>)}
+        </ul>
+      )
+    } else {
+      return (<p>お探しの店舗が見つかりませんでした。</p>)
+    }
   }
 
   return (
@@ -121,12 +138,13 @@ export default function Conditions(): JSX.Element {
         <div className="btn-wrapper">
           <Button className={styles().searchBtn} onClick={search}>検索</Button>
         </div>
-        <ul>{data.map((store: Store, i) =>
+        {/* <ul>{data.map((store: Store, i) =>
           <li key={i}>
             <p>{store.name}</p><p>{store.address}</p>{store.is24Hours && <p className="24hours">24時間</p>}
             {store.hasAtm && <p className="atm">ATM</p>}{store.hasDrug && <p className="drug">ドラッグ</p>}
           </li>)}
-        </ul>
+        </ul> */}
+        <SearchResult stores={data} />
       </div>
     </App>
   )
