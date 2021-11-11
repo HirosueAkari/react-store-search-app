@@ -20,15 +20,19 @@ interface Store {
   // 上記にすると、boolean型の値に影響がでるのはなぜ
 }
 
-interface geoStore extends Store {
+interface distanceStore extends Store {
   distance?: number //任意でないとエラーになるのはなぜ
+}
+
+interface searchResultProps {
+  stores: distanceStore[]
 }
 
 export default function Conditions(): JSX.Element {
   const [latitude, setLatitude] = useState<number>()
   const [longitude, setLongitude] = useState<number>()
   const [localLocation, setLocalLocation] = useState<string>('')
-  const [data, setData] = useState<geoStore[]>([])
+  const [data, setData] = useState<distanceStore[]>([])
 
   const styles = makeStyles(() =>
     createStyles({
@@ -68,7 +72,7 @@ export default function Conditions(): JSX.Element {
       setLocalLocation(res.results[0].formatted_address)
       // addStoreGeoCode()
     }).then(() => {
-      storeList.forEach((data: geoStore) => {
+      storeList.forEach((data: distanceStore) => {
         if (data.latitude && data.longitude) {
           const distance = getDistance(lat, lon, data.latitude, data.longitude)
           data.distance = distance
@@ -77,7 +81,7 @@ export default function Conditions(): JSX.Element {
         }
       })
     }).then(() => {
-      storeList.sort((a: geoStore, b: geoStore) => {
+      storeList.sort((a: distanceStore, b: distanceStore) => {
         if (a.distance && b.distance) {
           return (a.distance < b.distance) ? -1 : 1
         } else return 0
@@ -87,7 +91,7 @@ export default function Conditions(): JSX.Element {
   }
 
   // const addStoreGeoCode = () => {
-  //   storeList.forEach((data: geoStore) => {
+  //   storeList.forEach((data: distanceStore) => {
   //     Geocode.fromAddress(data.address).then((res) => {
   //       const { lat, lng } = res.results[0].geometry.location
   //       data.latitude = lat
@@ -124,6 +128,20 @@ export default function Conditions(): JSX.Element {
     return Math.floor(distance * 10) / 10
   }
 
+  const SearchResult: React.FC<searchResultProps> = (props) => {
+    if (props.stores.length > 0) {
+      return (
+        <ul>{props.stores.map((store: distanceStore, i) =>
+          <li key={i}>
+            <p>{store.name}</p><p>{store.address}</p><p>{store.distance}km</p>
+          </li>)}
+        </ul>
+      )
+    } else {
+      return (<p>お近くの店舗が見つかりませんでした。</p>)
+    }
+  }
+
   return (
     <App>
       <div className="location">
@@ -135,16 +153,12 @@ export default function Conditions(): JSX.Element {
           <p>経度：{longitude}</p>
           <p>現在地：{localLocation}</p>
         </div>
-        {/* <ul>{data.map((store: geoStore, i) =>
+        {/* <ul>{data.filter((store: distanceStore) => store.distance && store.distance < 0).map((store: distanceStore, i) =>
           <li key={i}>
             <p>{store.name}</p><p>{store.address}</p><p>{store.distance}km</p>
           </li>)}
         </ul> */}
-        <ul>{data.filter((store: geoStore,) => store.distance && store.distance < 10).map((store: geoStore, i) =>
-          <li key={i}>
-            <p>{store.name}</p><p>{store.address}</p><p>{store.distance}km</p>
-          </li>)}
-        </ul>
+        <SearchResult stores={data.filter((store: distanceStore) => store.distance && store.distance < 10)} />
       </div>
     </App>
   )
