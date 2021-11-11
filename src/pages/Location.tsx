@@ -50,9 +50,11 @@ export default function Conditions(): JSX.Element {
       maximumAge: 10000
     }
 
+    if (!navigator.geolocation) alert("あなたの端末では、現在位置を取得できません。")
+
     navigator.geolocation.getCurrentPosition(
       (position: GeolocationPosition) => success(position),
-      () => ({}),
+      (error: GeolocationPositionError) => fail(error),
       option
     )
   }
@@ -88,6 +90,17 @@ export default function Conditions(): JSX.Element {
       })
       setData(storeList)
     })
+  }
+
+  const fail = (e: GeolocationPositionError) => {
+    const errmsg = [
+      '原因不明',
+      '位置情報の取得が許可されませんでした。',
+      '位置情報が取得できませんでした',
+      'タイムアウトしました'
+    ]
+
+    alert(errmsg[e.code])
   }
 
   // const addStoreGeoCode = () => {
