@@ -32,7 +32,8 @@ export default function Conditions(): JSX.Element {
   const [latitude, setLatitude] = useState<number>()
   const [longitude, setLongitude] = useState<number>()
   const [localLocation, setLocalLocation] = useState<string>('')
-  const [data, setData] = useState<distanceStore[]>([])
+  const [data, setData] = useState<distanceStore[]>()
+  const [errCode, setErrorCode] = useState<number>()
 
   const styles = makeStyles(() =>
     createStyles({
@@ -100,14 +101,20 @@ export default function Conditions(): JSX.Element {
   }
 
   const fail = (e: GeolocationPositionError) => {
+    setErrorCode(e.code)
+  }
+
+  const ErrMsg = () => {
     const errmsg = [
-      '原因不明',
+      '原因不明のエラーです',
       '位置情報の取得が許可されませんでした。',
       '位置情報が取得できませんでした',
       'タイムアウトしました'
     ]
 
-    alert(errmsg[e.code])
+    if (errCode !== undefined) return (<p>{errmsg[errCode]}</p>)
+
+    return null
   }
 
   // const addStoreGeoCode = () => {
@@ -173,7 +180,8 @@ export default function Conditions(): JSX.Element {
           <p>経度：{longitude}</p>
           <p>現在地：{localLocation}</p>
         </div>
-        <SearchResult stores={data.filter((store: distanceStore) => store.distance && store.distance < 10)} />
+        <ErrMsg />
+        {data && <SearchResult stores={data.filter((store: distanceStore) => store.distance && store.distance < 10)} />}
       </div>
     </App>
   )

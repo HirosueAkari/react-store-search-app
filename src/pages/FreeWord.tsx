@@ -20,7 +20,7 @@ interface searchResultProps {
 }
 
 export default function FreeWord(): JSX.Element {
-  const [data, setData] = useState<Store[]>([])
+  const [data, setData] = useState<Store[]>()
   const [freeWord, setFreeWord] = useState('')
 
   const onChangeFreeWord = (el: React.ChangeEvent<HTMLInputElement>) => {
@@ -69,7 +69,7 @@ export default function FreeWord(): JSX.Element {
           />
           <Button className="searchBtn" onClick={search}>検索</Button>
         </div>
-        <SearchResult stores={data} />
+        {data && <SearchResult stores={data} />}
       </div>
     </App>
   )

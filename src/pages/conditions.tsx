@@ -29,7 +29,7 @@ export default function Conditions(): JSX.Element {
     hasAtm: false,
     hasDrug: false
   })
-  const [data, setData] = useState<Store[]>([])
+  const [data, setData] = useState<Store[]>()
   const { is24Hours, hasAtm, hasDrug } = state
 
   const styles = makeStyles(() =>
@@ -144,7 +144,7 @@ export default function Conditions(): JSX.Element {
         <div className="btn-wrapper">
           <Button className={styles().searchBtn} onClick={search}>検索</Button>
         </div>
-        <SearchResult stores={data} />
+        {data && <SearchResult stores={data} />}
       </div>
     </App>
   )

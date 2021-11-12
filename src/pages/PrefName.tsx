@@ -25,7 +25,7 @@ interface searchResultProps {
 }
 
 function PrefName(): JSX.Element {
-  const [data, setData] = useState<Store[]>([])
+  const [data, setData] = useState<Store[]>()
   const [prefectures, setPrefectures] = useState<Prefectures[]>([])
   const [prefName, setPrefName] = useState('')
 
@@ -102,7 +102,7 @@ function PrefName(): JSX.Element {
           </select>
           <button className="searchBtn" onClick={search}>検索</button>
         </div>
-        <SearchResult stores={data} />
+        {data && <SearchResult stores={data} />}
       </div>
     </App>
   )
