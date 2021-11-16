@@ -1,10 +1,10 @@
 import App from 'pages/App'
-import { useState } from 'react'
+import { useState, useRef, useCallback } from 'react'
 import { Button } from '@material-ui/core'
 import Geocode from "react-geocode"
 import storeList from 'utils/dummy/store.json'
 import { makeStyles, createStyles } from "@material-ui/core/styles"
-
+import { GoogleMap, useLoadScript } from "@react-google-maps/api"
 interface Store {
   code: string
   name: string
@@ -28,7 +28,7 @@ interface searchResultProps {
   stores: distanceStore[]
 }
 
-export default function Conditions(): JSX.Element {
+export default function Location(): JSX.Element {
   const [latitude, setLatitude] = useState<number>()
   const [longitude, setLongitude] = useState<number>()
   const [localLocation, setLocalLocation] = useState<string>('')
@@ -168,6 +168,42 @@ export default function Conditions(): JSX.Element {
     }
   }
 
+  const GoogleMapComponent = () => {
+    const { isLoaded, loadError } = useLoadScript({
+      googleMapsApiKey: 'AIzaSyA-7S1CFzW0z10dZ72KrpvbX2qdZxktgY4',
+      // ここにAPIキーを入力します。今回は.envに保存しています。
+    });
+
+    const mapRef: React.MutableRefObject<undefined> = useRef();
+    const onMapLoad = useCallback((map) => {
+      mapRef.current = map;
+    }, []);
+
+    if (loadError) return (<p>Error</p>);
+    if (!isLoaded) return (<p>Loading...</p>);
+
+    return (
+      <GoogleMap
+        id="map"
+        mapContainerStyle={{
+          height: "60vh",
+          width: "100%",
+        }}
+        zoom={8}
+        center={{
+          lat: 43.048225,
+          lng: 141.49701,
+        }}
+        options={{
+          disableDefaultUI: true,
+          zoomControl: true,
+        }}
+        onLoad={onMapLoad}
+      >
+      </GoogleMap>
+    )
+  }
+
   return (
     <App>
       <div className="location">
@@ -181,6 +217,7 @@ export default function Conditions(): JSX.Element {
         </div>
         <ErrMsg />
         {data && <SearchResult stores={data.filter((store: distanceStore) => store.distance && store.distance < 0)} />}
+        <GoogleMapComponent />
       </div>
     </App>
   )
