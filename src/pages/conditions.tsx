@@ -23,6 +23,10 @@ interface searchResultProps {
   stores: Store[]
 }
 
+const INIT = 0
+const NOT_CHEKED = 1
+const RESULT_NOT_FOUND = 2
+
 export default function Conditions(): JSX.Element {
   const [state, setState] = useState<checkebox>({
     is24Hours: false,
@@ -30,6 +34,7 @@ export default function Conditions(): JSX.Element {
     hasDrug: false
   })
   const [data, setData] = useState<Store[]>()
+  const [errCode, setErrCode] = useState<number>(INIT)
   const { is24Hours, hasAtm, hasDrug } = state
 
   const styles = makeStyles(() =>
@@ -61,10 +66,12 @@ export default function Conditions(): JSX.Element {
 
     try {
       if (!checkedArr.length) {
+        setErrCode(NOT_CHEKED)
         throw new Error('条件が選択されていません')
       }
     } catch (e) {
       console.error(e)
+      return
     }
 
     let result: Store[] = []
@@ -90,6 +97,7 @@ export default function Conditions(): JSX.Element {
 
   const SearchResult: React.FC<searchResultProps> = (props) => {
     if (props.stores.length) {
+      setErrCode(INIT)
       return (
         <ul>{props.stores.map((store: Store, i) =>
           <li key={i}>
@@ -99,7 +107,19 @@ export default function Conditions(): JSX.Element {
         </ul>
       )
     } else {
-      return (<p>お探しの店舗が見つかりませんでした。</p>)
+      setErrCode(RESULT_NOT_FOUND)
+      return null
+    }
+  }
+
+  const ErrMsg = () => {
+    switch (errCode) {
+      case NOT_CHEKED:
+        return (<p>条件が選択されていません。</p>)
+      case RESULT_NOT_FOUND:
+        return (<p>お探しの店舗が見つかりませんでした。</p>)
+      default:
+        return null
     }
   }
 
@@ -145,6 +165,7 @@ export default function Conditions(): JSX.Element {
           <Button className={styles().searchBtn} onClick={search}>検索</Button>
         </div>
         {data && <SearchResult stores={data} />}
+        <ErrMsg />
       </div>
     </App>
   )

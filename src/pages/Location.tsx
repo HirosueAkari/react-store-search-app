@@ -53,7 +53,6 @@ export default function Conditions(): JSX.Element {
 
     try {
       if (!navigator.geolocation) {
-        alert('あなたの端末では、現在位置を取得できません。')
         throw new Error('現在地取得できない端末です')
       }
 
@@ -181,7 +180,7 @@ export default function Conditions(): JSX.Element {
           <p>現在地：{localLocation}</p>
         </div>
         <ErrMsg />
-        {data && <SearchResult stores={data.filter((store: distanceStore) => store.distance && store.distance < 10)} />}
+        {data && <SearchResult stores={data.filter((store: distanceStore) => store.distance && store.distance < 0)} />}
       </div>
     </App>
   )

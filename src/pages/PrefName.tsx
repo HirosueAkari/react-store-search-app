@@ -24,10 +24,16 @@ interface searchResultProps {
   stores: Store[]
 }
 
+const INIT = 0
+const PREF_GET_FAIL = 1
+const PREF_NOT_CHOICE = 2
+const RESULT_NOT_FOUND = 3
+
 function PrefName(): JSX.Element {
   const [data, setData] = useState<Store[]>()
   const [prefectures, setPrefectures] = useState<Prefectures[]>([])
   const [prefName, setPrefName] = useState('')
+  const [errCode, setErrCode] = useState<number>(INIT)
 
   useEffect(() => {
     const getPrefectures = async (): Promise<void> => {
@@ -42,6 +48,7 @@ function PrefName(): JSX.Element {
         if (res) {
           setPrefectures(res)
         } else {
+          setErrCode(PREF_GET_FAIL)
           throw new Error('都道府県が取得できませんでした')
         }
       } catch (e) {
@@ -71,6 +78,7 @@ function PrefName(): JSX.Element {
         setData(arr)
         return
       } else {
+        setErrCode(PREF_NOT_CHOICE)
         throw new Error('都道府県が選択されていません')
       }
     } catch (e) {
@@ -80,13 +88,28 @@ function PrefName(): JSX.Element {
 
   const SearchResult: React.FC<searchResultProps> = (props) => {
     if (props.stores.length) {
+      setErrCode(INIT)
       return (
         <ul>{props.stores.map((store: Store, i) =>
           <li key={i}><p>{store.name}</p><p>{store.address}</p></li>)}
         </ul>
       )
     } else {
-      return (<p>お探しの店舗が見つかりませんでした。</p>)
+      setErrCode(RESULT_NOT_FOUND)
+      return null
+    }
+  }
+
+  const ErrMsg = () => {
+    switch (errCode) {
+      case PREF_GET_FAIL:
+        return (<p>都道府県が取得できませんでした。</p>)
+      case PREF_NOT_CHOICE:
+        return (<p>都道府県が選択されていません。</p>)
+      case RESULT_NOT_FOUND:
+        return (<p>お探しの店舗が見つかりませんでした。</p>)
+      default:
+        return null
     }
   }
 
@@ -103,6 +126,7 @@ function PrefName(): JSX.Element {
           <button className="searchBtn" onClick={search}>検索</button>
         </div>
         {data && <SearchResult stores={data} />}
+        <ErrMsg />
       </div>
     </App>
   )

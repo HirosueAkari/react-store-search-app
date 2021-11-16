@@ -19,9 +19,14 @@ interface searchResultProps {
   stores: Store[]
 }
 
+const INIT = 0
+const WORD_NOT_INPUT = 1
+const RESULT_NOT_FOUND = 2
+
 export default function FreeWord(): JSX.Element {
   const [data, setData] = useState<Store[]>()
   const [freeWord, setFreeWord] = useState('')
+  const [errCode, setErrCode] = useState<number>(INIT)
 
   const onChangeFreeWord = (el: React.ChangeEvent<HTMLInputElement>) => {
     setFreeWord(el.target.value)
@@ -40,6 +45,7 @@ export default function FreeWord(): JSX.Element {
         setData(arr)
         return
       } else {
+        setErrCode(WORD_NOT_INPUT)
         throw new Error('検索内容が入力されていません。')
       }
     } catch (e) {
@@ -49,13 +55,26 @@ export default function FreeWord(): JSX.Element {
 
   const SearchResult: React.FC<searchResultProps> = (props) => {
     if (props.stores.length) {
+      setErrCode(INIT)
       return (
         <ul>{props.stores.map((store: Store, i) =>
           <li key={i}><p>{store.name}</p><p>{store.address}</p></li>)}
         </ul>
       )
     } else {
-      return (<p>お探しの店舗が見つかりませんでした。</p>)
+      setErrCode(RESULT_NOT_FOUND)
+      return null
+    }
+  }
+
+  const ErrMsg = () => {
+    switch (errCode) {
+      case WORD_NOT_INPUT:
+        return (<p>検索内容が入力されていません。</p>)
+      case RESULT_NOT_FOUND:
+        return (<p>お探しの店舗が見つかりませんでした。</p>)
+      default:
+        return null
     }
   }
 
@@ -70,6 +89,7 @@ export default function FreeWord(): JSX.Element {
           <Button className="searchBtn" onClick={search}>検索</Button>
         </div>
         {data && <SearchResult stores={data} />}
+        <ErrMsg />
       </div>
     </App>
   )
