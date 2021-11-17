@@ -4,7 +4,7 @@ import { Button } from '@material-ui/core'
 import Geocode from "react-geocode"
 import storeList from 'utils/dummy/store.json'
 import { makeStyles, createStyles } from "@material-ui/core/styles"
-import { GoogleMap, useLoadScript } from "@react-google-maps/api"
+import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api"
 interface Store {
   code: string
   name: string
@@ -34,6 +34,7 @@ export default function Location(): JSX.Element {
   const [localLocation, setLocalLocation] = useState<string>('')
   const [data, setData] = useState<distanceStore[]>()
   const [errCode, setErrorCode] = useState<number>()
+  const [resultData, setResultData] = useState<distanceStore[]>([])
 
   const styles = makeStyles(() =>
     createStyles({
@@ -96,6 +97,9 @@ export default function Location(): JSX.Element {
         } else return 0
       })
       setData(storeList)
+    }).then(() => {
+      const arr = storeList.filter((store: distanceStore) => store.distance && store.distance < 10)
+      setResultData(arr)
     })
   }
 
@@ -157,7 +161,7 @@ export default function Location(): JSX.Element {
   const SearchResult: React.FC<searchResultProps> = (props) => {
     if (props.stores.length) {
       return (
-        <ul>{props.stores.map((store: distanceStore, i) =>
+        <ul className="store-list">{props.stores.map((store: distanceStore, i) =>
           <li key={i}>
             <p>{store.name}</p><p>{store.address}</p><p>{store.distance}km</p>
           </li>)}
@@ -171,7 +175,6 @@ export default function Location(): JSX.Element {
   const GoogleMapComponent = () => {
     const { isLoaded, loadError } = useLoadScript({
       googleMapsApiKey: 'AIzaSyA-7S1CFzW0z10dZ72KrpvbX2qdZxktgY4',
-      // ここにAPIキーを入力します。今回は.envに保存しています。
     });
 
     const mapRef: React.MutableRefObject<undefined> = useRef();
@@ -181,25 +184,34 @@ export default function Location(): JSX.Element {
 
     if (loadError) return (<p>Error</p>);
     if (!isLoaded) return (<p>Loading...</p>);
+    if (!latitude) return null
+    if (!longitude) return null
+    if (resultData.length === 0) return null
+
+    const center = {
+      lat: latitude,
+      lng: longitude
+    }
 
     return (
       <GoogleMap
         id="map"
         mapContainerStyle={{
-          height: "60vh",
-          width: "100%",
+          height: "500px",
+          width: "700px",
         }}
-        zoom={8}
-        center={{
-          lat: 43.048225,
-          lng: 141.49701,
-        }}
+        zoom={15}
+        center={center}
         options={{
           disableDefaultUI: true,
           zoomControl: true,
         }}
         onLoad={onMapLoad}
       >
+        <Marker position={center} />
+        {resultData.map((data: distanceStore, i) =>
+          <Marker key={i} position={{ lat: data.latitude, lng: data.longitude }} />
+        )}
       </GoogleMap>
     )
   }
@@ -207,17 +219,21 @@ export default function Location(): JSX.Element {
   return (
     <App>
       <div className="location">
-        <div className="btn-wrapper">
-          <Button className={styles().searchBtn} onClick={getCurrentLocation}>現在地を取得</Button>
+        <div className="left">
+          <div className="btn-wrapper">
+            <Button className={styles().searchBtn} onClick={getCurrentLocation}>現在地を取得</Button>
+          </div>
+          <div>
+            <p>緯度：{latitude}</p>
+            <p>経度：{longitude}</p>
+            <p>現在地：{localLocation}</p>
+          </div>
+          <ErrMsg />
+          {data && <SearchResult stores={data.filter((store: distanceStore) => store.distance && store.distance < 10)} />}
         </div>
-        <div>
-          <p>緯度：{latitude}</p>
-          <p>経度：{longitude}</p>
-          <p>現在地：{localLocation}</p>
+        <div className="right">
+          <GoogleMapComponent />
         </div>
-        <ErrMsg />
-        {data && <SearchResult stores={data.filter((store: distanceStore) => store.distance && store.distance < 0)} />}
-        <GoogleMapComponent />
       </div>
     </App>
   )

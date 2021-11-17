@@ -57,8 +57,25 @@ ul {
   }
 }
 
+.store-list {
+  width: 100%;
+}
+
 .btn-wrapper {
   margin-top: 16px;
+}
+
+.location {
+  display: flex;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 32px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
