@@ -5,6 +5,7 @@ import Geocode from "react-geocode"
 import storeList from 'utils/dummy/store.json'
 import { makeStyles, createStyles } from "@material-ui/core/styles"
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api"
+import Direction from '../components/Direction'
 interface Store {
   code: string
   name: string
@@ -209,9 +210,10 @@ export default function Location(): JSX.Element {
         onLoad={onMapLoad}
       >
         <Marker position={center} />
-        {resultData.map((data: distanceStore, i) =>
+        {/* {resultData.map((data: distanceStore, i) =>
           <Marker key={i} position={{ lat: data.latitude, lng: data.longitude }} />
-        )}
+        )} */}
+        <Direction origin={center} destination={{ lat: resultData[0].latitude, lng: resultData[0].longitude }} />
       </GoogleMap>
     )
   }
