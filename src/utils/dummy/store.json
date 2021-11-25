@@ -140,8 +140,8 @@
     "is24Hours": true,
     "hasAtm": true,
     "hasDrug": false,
-    "latitude": 33.6956411,
-    "longitude": 130.4471487
+    "latitude": 33.6956709,
+    "longitude": 130.4493416
   },
   {
     "code": "13",
@@ -284,8 +284,8 @@
     "is24Hours": true,
     "hasAtm": true,
     "hasDrug": true,
-    "latitude": 33.6092258,
-    "longitude": 130.4431575
+    "latitude": 33.6095413,
+    "longitude": 130.4463478
   },
   {
     "code": "25",
@@ -332,8 +332,8 @@
     "is24Hours": true,
     "hasAtm": true,
     "hasDrug": true,
-    "latitude": 33.602116,
-    "longitude": 130.4541223
+    "latitude": 33.602138,
+    "longitude": 130.454633
   },
   {
     "code": "29",
@@ -1916,8 +1916,8 @@
     "is24Hours": true,
     "hasAtm": true,
     "hasDrug": true,
-    "latitude": 33.6643226,
-    "longitude": 130.4158657
+    "latitude": 33.6645948,
+    "longitude": 130.4155696
   },
   {
     "code": "161",
@@ -2408,8 +2408,8 @@
     "is24Hours": true,
     "hasAtm": true,
     "hasDrug": false,
-    "latitude": 33.592204,
-    "longitude": 130.4924585
+    "latitude": 33.592227,
+    "longitude": 130.4946959
   },
   {
     "code": "202",
@@ -2552,8 +2552,8 @@
     "is24Hours": true,
     "hasAtm": true,
     "hasDrug": true,
-    "latitude": 33.5428707,
-    "longitude": 130.4471802
+    "latitude": 33.5428937,
+    "longitude": 130.4493756
   },
   {
     "code": "214",
@@ -2576,8 +2576,8 @@
     "is24Hours": true,
     "hasAtm": false,
     "hasDrug": false,
-    "latitude": 33.5386483,
-    "longitude": 130.435778
+    "latitude": 33.5386622,
+    "longitude": 130.437968
   },
   {
     "code": "216",
@@ -2624,8 +2624,8 @@
     "is24Hours": true,
     "hasAtm": true,
     "hasDrug": true,
-    "latitude": 33.536107,
-    "longitude": 130.4781433
+    "latitude": 33.5361534,
+    "longitude": 130.4803488
   },
   {
     "code": "220",

@@ -24,17 +24,11 @@ export default function Direction({ origin, destination }: Props): JSX.Element |
           googleResponse.geocoded_waypoints.length !==
           currentDirection.geocoded_waypoints.length
         ) {
-          console.log("ルートが変更されたのでstateを更新する");
           setCurrentDirection(googleResponse);
-        } else {
-          console.log("前回と同じルートのためstateを更新しない");
         }
       } else {
         if (googleResponse.status === "OK") {
-          console.log("初めてルートが設定されたため、stateを更新する");
           setCurrentDirection(googleResponse);
-        } else {
-          console.log("前回と同じルートのためstateを更新しない");
         }
       }
     }
@@ -54,6 +48,10 @@ export default function Direction({ origin, destination }: Props): JSX.Element |
         <DirectionsRenderer
           options={{
             directions: currentDirection,
+            markerOptions: {
+              clickable: true
+            },
+            suppressMarkers: true
           }}
         />
       )}

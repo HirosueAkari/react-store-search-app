@@ -36,6 +36,7 @@ export default function Location(): JSX.Element {
   const [data, setData] = useState<distanceStore[]>()
   const [errCode, setErrorCode] = useState<number>()
   const [resultData, setResultData] = useState<distanceStore[]>([])
+  const [selectedStore, setSelectedStore] = useState<Pick<Store, 'latitude' | 'longitude'>>()
 
   const styles = makeStyles(() =>
     createStyles({
@@ -101,6 +102,10 @@ export default function Location(): JSX.Element {
     }).then(() => {
       const arr = storeList.filter((store: distanceStore) => store.distance && store.distance < 10)
       setResultData(arr)
+      setSelectedStore({
+        latitude: arr[0].latitude,
+        longitude: arr[0].longitude
+      })
     })
   }
 
@@ -159,12 +164,19 @@ export default function Location(): JSX.Element {
     return Math.floor(distance * 10) / 10
   }
 
+  const selectStore = (value: distanceStore) => {
+    setSelectedStore({
+      latitude: value.latitude,
+      longitude: value.longitude
+    })
+  }
+
   const SearchResult: React.FC<searchResultProps> = (props) => {
     if (props.stores.length) {
       return (
         <ul className="store-list">{props.stores.map((store: distanceStore, i) =>
-          <li key={i}>
-            <p>{store.name}</p><p>{store.address}</p><p>{store.distance}km</p>
+          <li className="store-list-item" key={i} onClick={() => selectStore(store)}>
+            <p>{store.name}</p><p>{store.distance}km</p>
           </li>)}
         </ul>
       )
@@ -188,10 +200,16 @@ export default function Location(): JSX.Element {
     if (!latitude) return null
     if (!longitude) return null
     if (resultData.length === 0) return null
+    if (!selectedStore) return null
 
     const center = {
       lat: latitude,
       lng: longitude
+    }
+
+    const params = {
+      lat: selectedStore.latitude,
+      lng: selectedStore.longitude
     }
 
     return (
@@ -210,10 +228,10 @@ export default function Location(): JSX.Element {
         onLoad={onMapLoad}
       >
         <Marker position={center} />
-        {/* {resultData.map((data: distanceStore, i) =>
-          <Marker key={i} position={{ lat: data.latitude, lng: data.longitude }} />
-        )} */}
-        <Direction origin={center} destination={{ lat: resultData[0].latitude, lng: resultData[0].longitude }} />
+        {resultData.map((data: distanceStore, i) =>
+          <Marker key={i} position={{ lat: data.latitude, lng: data.longitude }} label={`${i + 1}`} />
+        )}
+        <Direction origin={center} destination={params} />
       </GoogleMap>
     )
   }
