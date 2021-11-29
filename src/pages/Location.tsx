@@ -1,5 +1,5 @@
 import App from 'pages/App'
-import { useState, useRef, useCallback } from 'react'
+import React, { useState, useRef, useCallback } from 'react'
 import { Button } from '@material-ui/core'
 import Geocode from "react-geocode"
 import storeList from 'utils/dummy/store.json'
@@ -171,7 +171,8 @@ export default function Location(): JSX.Element {
     })
   }
 
-  const SearchResult: React.FC<searchResultProps> = (props) => {
+  // eslint-disable-next-line react/display-name
+  const SearchResult = React.memo((props: searchResultProps) => {
     if (props.stores.length) {
       return (
         <ul className="store-list">{props.stores.map((store: distanceStore, i) =>
@@ -183,7 +184,7 @@ export default function Location(): JSX.Element {
     } else {
       return (<p>お近くの店舗が見つかりませんでした。</p>)
     }
-  }
+  })
 
   const GoogleMapComponent = () => {
     const { isLoaded, loadError } = useLoadScript({

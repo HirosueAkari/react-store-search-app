@@ -48,9 +48,6 @@ export default function Direction({ origin, destination }: Props): JSX.Element |
         <DirectionsRenderer
           options={{
             directions: currentDirection,
-            markerOptions: {
-              clickable: true
-            },
             suppressMarkers: true
           }}
         />
